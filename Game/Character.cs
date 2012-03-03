@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace WindowsGame1
 {
-    class Character : Sprite
+    class Character : AnimatedSprite
     {
         const string CHARACTER_ASSETNAME = "test";
         const int START_POSITION_X = 400;
@@ -24,11 +24,10 @@ namespace WindowsGame1
         {
             Walking, Running, Stationary
         }
-
         State mCurrentState = State.Walking;
 
-        public Vector2 mDirection = Vector2.Zero;
-        public Vector2 mSpeed = Vector2.Zero;
+        Vector2 mDirection = Vector2.Zero;
+        Vector2 mSpeed = Vector2.Zero;
 
         KeyboardState mPreviousKeyboardState;
 

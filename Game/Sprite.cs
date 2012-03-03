@@ -13,10 +13,10 @@ namespace WindowsGame1
     {
  
         //The current position of the Sprite
-        public Vector2 pos = new Vector2(0, 0);
+        protected Vector2 pos = new Vector2(0, 0);
 
         //The texture object used when drawing the sprite
-        private Texture2D tex;
+        protected Texture2D tex;
 
         //The asset name for the Sprite's Texture
         public string assetName;
