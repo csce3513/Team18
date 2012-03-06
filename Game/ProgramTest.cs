@@ -63,17 +63,5 @@ namespace TestProject1
         //
         #endregion
 
-
-        /// <summary>
-        ///A test for Main
-        ///</summary>
-        [TestMethod()]
-        [DeploymentItem("WindowsGame1.exe")]
-        public void MainTest()
-        {
-            string[] args = null; // TODO: Initialize to an appropriate value
-            Program_Accessor.Main(args);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
-        }
     }
 }

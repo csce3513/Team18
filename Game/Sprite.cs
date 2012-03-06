@@ -62,6 +62,7 @@ namespace WindowsGame1
                 new Rectangle(0, 0, tex.Width, tex.Height),
                 Color.White, 0.0f, Vector2.Zero, Scale, SpriteEffects.None, 0);
         }
+
         public void updatePos(Vector2 newPos)
         {
             pos = newPos;
@@ -70,6 +71,19 @@ namespace WindowsGame1
         internal void Update(GameTime gameTime)
         {
             throw new NotImplementedException();
+        }
+
+
+        //For testing
+        public Vector2 getPos()
+        {
+            return pos;
+        }
+
+        //For testing
+        public Texture2D getTex()
+        {
+            return tex;
         }
     }
 }
