@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c60bff85-600c-4107-9cc7-97b213ce994e" name="asatou wagne@DANIEL 2012-02-27 23:07:25" runUser="DANIEL\asatou wagne" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8f782d86-50d5-4c23-97e7-f5838657182f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="asatou wagne_DANIEL 2012-02-27 23_07_25">
+      <DeploymentItem filename="C:\Users\asatou wagne\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-27T23:07:25.1098331-06:00" queuing="2012-02-27T23:07:25.1288341-06:00" start="2012-02-27T23:07:25.1638362-06:00" finish="2012-02-27T23:07:25.9438808-06:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="8" executed="8" error="0" failed="6" timeout="0" aborted="0" inconclusive="2" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestPlay" storage="c:\users\asatou wagne\team18\team18\windowsgame1\testproject1\bin\debug\testproject1.dll" id="160abda5-5823-8eb7-c2b9-6be23a26d358">
+      <Execution id="5d7d5b0b-89ab-46c4-ab05-9aabc7c3b783" />
+      <TestMethod codeBase="C:/Users/asatou wagne/Team18/Team18/WindowsGame1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WindowsGame1.ButtonTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestPlay" />
+    </UnitTest>
+    <UnitTest name="DrawTest" storage="c:\users\asatou wagne\team18\team18\windowsgame1\testproject1\bin\debug\testproject1.dll" id="a3a98f54-c32c-46a8-fe63-010bfbf84c0d">
+      <Execution id="3ece6b19-0086-449b-91d8-c9449479335d" />
+      <TestMethod codeBase="C:/Users/asatou wagne/Team18/Team18/WindowsGame1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SpriteTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DrawTest" />
+    </UnitTest>
+    <UnitTest name="ScaleTest" storage="c:\users\asatou wagne\team18\team18\windowsgame1\testproject1\bin\debug\testproject1.dll" id="6db6a230-86db-58d1-25ff-b0299bdaf50e">
+      <Execution id="dc0522d7-04a1-4d90-8410-d1dba27c0ef1" />
+      <TestMethod codeBase="C:/Users/asatou wagne/Team18/Team18/WindowsGame1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SpriteTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ScaleTest" />
+    </UnitTest>
+    <UnitTest name="UpdateTest1" storage="c:\users\asatou wagne\team18\team18\windowsgame1\testproject1\bin\debug\testproject1.dll" id="c28a5beb-6866-418f-e106-1ab8c1ad2233">
+      <Execution id="04c2d584-f661-438d-a910-f54f5eb69f5a" />
+      <TestMethod codeBase="C:/Users/asatou wagne/Team18/Team18/WindowsGame1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SpriteTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTest1" />
+    </UnitTest>
+    <UnitTest name="SpriteConstructorTest" storage="c:\users\asatou wagne\team18\team18\windowsgame1\testproject1\bin\debug\testproject1.dll" id="ede66986-9f00-6c84-2a2c-4bcd1205cc54">
+      <Execution id="e4df2392-e539-460f-bc30-27e69dda530b" />
+      <TestMethod codeBase="C:/Users/asatou wagne/Team18/Team18/WindowsGame1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SpriteTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SpriteConstructorTest" />
+    </UnitTest>
+    <UnitTest name="LoadContentTest" storage="c:\users\asatou wagne\team18\team18\windowsgame1\testproject1\bin\debug\testproject1.dll" id="ad7d9037-7d6d-bb37-b6b5-3c811f22160d">
+      <Execution id="7a681858-530e-46d1-86c7-2e0d57437615" />
+      <TestMethod codeBase="C:/Users/asatou wagne/Team18/Team18/WindowsGame1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SpriteTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoadContentTest" />
+    </UnitTest>
+    <UnitTest name="UpdateTest" storage="c:\users\asatou wagne\team18\team18\windowsgame1\testproject1\bin\debug\testproject1.dll" id="c19f6492-facf-a78f-c74f-23ef0801c973">
+      <Execution id="cd14457e-5c09-484f-b677-74274abb573c" />
+      <TestMethod codeBase="C:/Users/asatou wagne/Team18/Team18/WindowsGame1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SpriteTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTest" />
+    </UnitTest>
+    <UnitTest name="updatePosTest" storage="c:\users\asatou wagne\team18\team18\windowsgame1\testproject1\bin\debug\testproject1.dll" id="9c9d7cd7-3b69-f943-f4fd-f6874a165428">
+      <Execution id="36d121e1-b602-423f-b5b2-6994c7d24b8b" />
+      <TestMethod codeBase="C:/Users/asatou wagne/Team18/Team18/WindowsGame1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SpriteTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="updatePosTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="160abda5-5823-8eb7-c2b9-6be23a26d358" executionId="5d7d5b0b-89ab-46c4-ab05-9aabc7c3b783" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6db6a230-86db-58d1-25ff-b0299bdaf50e" executionId="dc0522d7-04a1-4d90-8410-d1dba27c0ef1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c9d7cd7-3b69-f943-f4fd-f6874a165428" executionId="36d121e1-b602-423f-b5b2-6994c7d24b8b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3a98f54-c32c-46a8-fe63-010bfbf84c0d" executionId="3ece6b19-0086-449b-91d8-c9449479335d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad7d9037-7d6d-bb37-b6b5-3c811f22160d" executionId="7a681858-530e-46d1-86c7-2e0d57437615" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c19f6492-facf-a78f-c74f-23ef0801c973" executionId="cd14457e-5c09-484f-b677-74274abb573c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c28a5beb-6866-418f-e106-1ab8c1ad2233" executionId="04c2d584-f661-438d-a910-f54f5eb69f5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ede66986-9f00-6c84-2a2c-4bcd1205cc54" executionId="e4df2392-e539-460f-bc30-27e69dda530b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5d7d5b0b-89ab-46c4-ab05-9aabc7c3b783" testId="160abda5-5823-8eb7-c2b9-6be23a26d358" testName="TestPlay" computerName="DANIEL" duration="00:00:00.0489557" startTime="2012-02-27T23:07:25.1638362-06:00" endTime="2012-02-27T23:07:25.5448579-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d7d5b0b-89ab-46c4-ab05-9aabc7c3b783">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreSame failed. </Message>
+          <StackTrace>   at WindowsGame1.ButtonTest.TestPlay() in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\ButtonTest.cs:line 18
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dc0522d7-04a1-4d90-8410-d1dba27c0ef1" testId="6db6a230-86db-58d1-25ff-b0299bdaf50e" testName="ScaleTest" computerName="DANIEL" duration="00:00:00.1361594" startTime="2012-02-27T23:07:25.5498582-06:00" endTime="2012-02-27T23:07:25.6988668-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc0522d7-04a1-4d90-8410-d1dba27c0ef1">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject1.SpriteTest.ScaleTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at WindowsGame1.Sprite.set_Scale(Single value) in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\Sprite.cs:line 40
+   at TestProject1.SpriteTest.ScaleTest() in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\SpriteTest.cs:line 152
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="36d121e1-b602-423f-b5b2-6994c7d24b8b" testId="9c9d7cd7-3b69-f943-f4fd-f6874a165428" testName="updatePosTest" computerName="DANIEL" duration="00:00:00.0053405" startTime="2012-02-27T23:07:25.7138676-06:00" endTime="2012-02-27T23:07:25.7358689-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36d121e1-b602-423f-b5b2-6994c7d24b8b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. A method that does not return a value cannot be verified.</Message>
+          <StackTrace>   at TestProject1.SpriteTest.updatePosTest() in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\SpriteTest.cs:line 140
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3ece6b19-0086-449b-91d8-c9449479335d" testId="a3a98f54-c32c-46a8-fe63-010bfbf84c0d" testName="DrawTest" computerName="DANIEL" duration="00:00:00.0071477" startTime="2012-02-27T23:07:25.7528698-06:00" endTime="2012-02-27T23:07:25.7808714-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ece6b19-0086-449b-91d8-c9449479335d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject1.SpriteTest.DrawTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at WindowsGame1.Sprite.Draw(SpriteBatch theSpriteBatch) in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\Sprite.cs:line 61
+   at TestProject1.SpriteTest.DrawTest() in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\SpriteTest.cs:line 88
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7a681858-530e-46d1-86c7-2e0d57437615" testId="ad7d9037-7d6d-bb37-b6b5-3c811f22160d" testName="LoadContentTest" computerName="DANIEL" duration="00:00:00.0338444" startTime="2012-02-27T23:07:25.7868718-06:00" endTime="2012-02-27T23:07:25.8348745-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a681858-530e-46d1-86c7-2e0d57437615">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject1.SpriteTest.LoadContentTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at WindowsGame1.Sprite.LoadContent(ContentManager theContentManager, String theAssetName) in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\Sprite.cs:line 47
+   at TestProject1.SpriteTest.LoadContentTest() in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\SpriteTest.cs:line 101
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cd14457e-5c09-484f-b677-74274abb573c" testId="c19f6492-facf-a78f-c74f-23ef0801c973" testName="UpdateTest" computerName="DANIEL" duration="00:00:00.0071492" startTime="2012-02-27T23:07:25.8388748-06:00" endTime="2012-02-27T23:07:25.8588759-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd14457e-5c09-484f-b677-74274abb573c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject1.SpriteTest.UpdateTest threw exception: 
+System.NotImplementedException: The method or operation is not implemented.</Message>
+          <StackTrace>    at WindowsGame1.Sprite.Update(GameTime gameTime) in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\Sprite.cs:line 72
+   at TestProject1.SpriteTest.UpdateTest() in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\SpriteTest.cs:line 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="04c2d584-f661-438d-a910-f54f5eb69f5a" testId="c28a5beb-6866-418f-e106-1ab8c1ad2233" testName="UpdateTest1" computerName="DANIEL" duration="00:00:00.0026739" startTime="2012-02-27T23:07:25.8658763-06:00" endTime="2012-02-27T23:07:25.8798771-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04c2d584-f661-438d-a910-f54f5eb69f5a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject1.SpriteTest.UpdateTest1 threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at WindowsGame1.Sprite.Update(GameTime theGameTime, Vector2 theSpeed, Vector2 theDirection) in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\Sprite.cs:line 55
+   at TestProject1.SpriteTest.UpdateTest1() in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\SpriteTest.cs:line 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e4df2392-e539-460f-bc30-27e69dda530b" testId="ede66986-9f00-6c84-2a2c-4bcd1205cc54" testName="SpriteConstructorTest" computerName="DANIEL" duration="00:00:00.0010681" startTime="2012-02-27T23:07:25.8838773-06:00" endTime="2012-02-27T23:07:25.8988782-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e4df2392-e539-460f-bc30-27e69dda530b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at TestProject1.SpriteTest.SpriteConstructorTest() in C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\SpriteTest.cs:line 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

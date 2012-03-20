@@ -32,3 +32,6 @@ using System.Runtime.InteropServices;
 //      Revision
 //
 [assembly: AssemblyVersion("1.0.0.0")]
+
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("TestProject_s")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("TestProject1")]

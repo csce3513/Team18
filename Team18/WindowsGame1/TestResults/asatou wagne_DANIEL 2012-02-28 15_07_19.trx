@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6c1a078e-fc40-4f39-9c73-50bd9d63c040" name="asatou wagne@DANIEL 2012-02-28 15:07:19" runUser="DANIEL\asatou wagne" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="8f782d86-50d5-4c23-97e7-f5838657182f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="asatou wagne_DANIEL 2012-02-28 15_07_19">
+      <DeploymentItem filename="C:\Users\asatou wagne\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-28T15:07:19.1640946-06:00" queuing="2012-02-28T15:07:19.2020968-06:00" start="2012-02-28T15:07:19.2330985-06:00" finish="2012-02-28T15:07:19.6751238-06:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestPlay" storage="c:\users\asatou wagne\team18\team18\windowsgame1\testproject1\bin\debug\testproject1.dll" id="160abda5-5823-8eb7-c2b9-6be23a26d358">
+      <Execution id="ff363906-6379-4caa-a284-5798d6f3f4ab" />
+      <TestMethod codeBase="C:/Users/asatou wagne/Team18/Team18/WindowsGame1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WindowsGame1.ButtonTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestPlay" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="160abda5-5823-8eb7-c2b9-6be23a26d358" executionId="ff363906-6379-4caa-a284-5798d6f3f4ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ff363906-6379-4caa-a284-5798d6f3f4ab" testId="160abda5-5823-8eb7-c2b9-6be23a26d358" testName="TestPlay" computerName="DANIEL" duration="00:00:00.0240594" startTime="2012-02-28T15:07:19.2941020-06:00" endTime="2012-02-28T15:07:19.6361216-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff363906-6379-4caa-a284-5798d6f3f4ab">
+    </UnitTestResult>
+  </Results>
+</TestRun>

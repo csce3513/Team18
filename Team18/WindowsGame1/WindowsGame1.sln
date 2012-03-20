@@ -3,20 +3,56 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsGame1", "WindowsGame1\WindowsGame1\WindowsGame1.csproj", "{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "WindowsGame1Content", "WindowsGame1\WindowsGame1Content\WindowsGame1Content.contentproj", "{1B6325D8-A57C-4CC5-9144-840139464A7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsGame1Content", "WindowsGame1\WindowsGame1Content\WindowsGame1Content.contentproj", "{1B6325D8-A57C-4CC5-9144-840139464A7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E21CB47A-9610-4436-A489-DE9DEEB0AA88}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		WindowsGame1.vsmdi = WindowsGame1.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{249E9D7F-064B-4655-9F6F-CDFC6A378147}"
 EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WindowsGame1.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Debug|x86.ActiveCfg = Debug|x86
 		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Debug|x86.Build.0 = Debug|x86
+		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Release|Any CPU.ActiveCfg = Release|x86
+		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Release|Mixed Platforms.Build.0 = Release|x86
 		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Release|x86.ActiveCfg = Release|x86
 		{0569FB2A-7EEA-40D3-AC79-E61B6C8A144F}.Release|x86.Build.0 = Release|x86
+		{1B6325D8-A57C-4CC5-9144-840139464A7E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1B6325D8-A57C-4CC5-9144-840139464A7E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{1B6325D8-A57C-4CC5-9144-840139464A7E}.Debug|x86.ActiveCfg = Debug|x86
+		{1B6325D8-A57C-4CC5-9144-840139464A7E}.Release|Any CPU.ActiveCfg = Release|x86
+		{1B6325D8-A57C-4CC5-9144-840139464A7E}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{1B6325D8-A57C-4CC5-9144-840139464A7E}.Release|x86.ActiveCfg = Release|x86
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{249E9D7F-064B-4655-9F6F-CDFC6A378147}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

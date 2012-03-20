@@ -11,16 +11,24 @@ using Microsoft.Xna.Framework.Media;
 
 namespace WindowsGame1
 {
+
     /// <summary>
     /// This is the main type for your game
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
-    {
+    { 
+        enum gamestate
+        {
+            menu, play
+        }
+        gamestate state;
         KeyboardState keystate;
+        KeyboardState lastKeyState; 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Sprite BG0;
-       
+        Sprite menu;
+
         Character player;
 
         public Game1()
@@ -39,12 +47,16 @@ namespace WindowsGame1
         {
             // TODO: Add your initialization logic here
 
+            //Game starts with the menu
+            state = gamestate.menu;
+
             //Player that can move around
             player = new Character();
 
-            //Background
+            //Backgrounds
+            menu = new Sprite();
             BG0 = new Sprite();
-            
+
             base.Initialize();
         }
 
@@ -58,9 +70,10 @@ namespace WindowsGame1
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //Background
+            menu.LoadContent(this.Content, "Menu");
             BG0.LoadContent(this.Content, "Forest 01a");
-            BG0.pos = new Vector2(-500, -500);
-            
+            BG0.updatePos(new Vector2(-500, -500));
+
             player.LoadContent(this.Content);
 
             // TODO: use this.Content to load your game content here
@@ -82,16 +95,33 @@ namespace WindowsGame1
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            //Get keyboard state
+            keystate = Keyboard.GetState();
             
-            // Allows the game to exit
-            if (keystate.IsKeyDown(Keys.Escape) == true)
-                this.Exit();
 
-            //Vector2 newPos = new Vector2(400, 300);
-            //player.updatePos(newPos);
+            if (state == gamestate.menu)
+            {
+                // Allows the game to exit
+                if ((keystate.IsKeyDown(Keys.Escape) == true) 
+                    && (lastKeyState.IsKeyUp(Keys.Escape) == true))
+                    this.Exit();
 
-            player.Update(gameTime);
-            
+                if ((keystate.IsKeyDown(Keys.Space) == true)
+                    && (lastKeyState.IsKeyUp(Keys.Space) == true))
+                {
+                    state = gamestate.play;
+                }
+            }
+            else if (state == gamestate.play)
+            {
+                if ((keystate.IsKeyDown(Keys.Escape) == true)
+                    && (lastKeyState.IsKeyUp(Keys.Escape) == true))
+                    state = gamestate.menu;
+
+                player.Update(gameTime);
+            }
+
+            lastKeyState = keystate;
             base.Update(gameTime);
         }
 
@@ -105,13 +135,22 @@ namespace WindowsGame1
 
             spriteBatch.Begin();
 
-            BG0.Draw(this.spriteBatch);
-          
-            player.Draw(this.spriteBatch);
-            
+            if (state == gamestate.menu)
+            {
+                menu.Draw(this.spriteBatch);
+            }
+
+            if (state == gamestate.play)
+            {
+                BG0.Draw(this.spriteBatch);
+
+                player.Draw(this.spriteBatch);
+            }
+
             spriteBatch.End();
 
             base.Draw(gameTime);
         }
+
     }
 }
