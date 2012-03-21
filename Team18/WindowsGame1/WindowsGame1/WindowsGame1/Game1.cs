@@ -28,6 +28,7 @@ namespace WindowsGame1
         SpriteBatch spriteBatch;
         Sprite BG0;
         Sprite menu;
+        Sprite tree;
 
         Character player;
 
@@ -56,7 +57,7 @@ namespace WindowsGame1
             //Backgrounds
             menu = new Sprite();
             BG0 = new Sprite();
-
+            tree = new Sprite();
             base.Initialize();
         }
 
@@ -71,7 +72,7 @@ namespace WindowsGame1
 
             //Background
             menu.LoadContent(this.Content, "Menu");
-            BG0.LoadContent(this.Content, "Forest 01a");
+            BG0.LoadContent(this.Content, "Terrain_Grass02_SR");
             BG0.updatePos(new Vector2(-500, -500));
 
             player.LoadContent(this.Content);

@@ -15,3 +15,4 @@ C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\WindowsG
 C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.pdb
 C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\obj\Debug\TestProject1.dll
 C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\obj\Debug\TestProject1.pdb
+C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\menu.xnb
