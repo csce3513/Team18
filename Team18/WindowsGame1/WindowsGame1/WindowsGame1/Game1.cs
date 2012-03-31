@@ -21,6 +21,7 @@ namespace WindowsGame1
         {
             menu, play
         }
+
         gamestate state;
         KeyboardState keystate;
         KeyboardState lastKeyState; 
@@ -58,6 +59,7 @@ namespace WindowsGame1
             menu = new Sprite();
             BG0 = new Sprite();
             tree = new Sprite();
+
             base.Initialize();
         }
 
@@ -72,8 +74,11 @@ namespace WindowsGame1
 
             //Background
             menu.LoadContent(this.Content, "Menu");
-            BG0.LoadContent(this.Content, "Terrain_Grass02_SR");
-            BG0.updatePos(new Vector2(-500, -500));
+            BG0.LoadContent(this.Content, "Grass");
+            BG0.updatePos(new Vector2(0, 0));
+            BG0.Scale = 3.0f;
+            tree.LoadContent(this.Content, "Tree");
+            tree.updatePos(new Vector2(100, 200));
 
             player.LoadContent(this.Content);
 
@@ -132,7 +137,7 @@ namespace WindowsGame1
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            //GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
 
@@ -144,6 +149,7 @@ namespace WindowsGame1
             if (state == gamestate.play)
             {
                 BG0.Draw(this.spriteBatch);
+                tree.Draw(this.spriteBatch);
 
                 player.Draw(this.spriteBatch);
             }
@@ -153,5 +159,6 @@ namespace WindowsGame1
             base.Draw(gameTime);
         }
 
+ 
     }
 }

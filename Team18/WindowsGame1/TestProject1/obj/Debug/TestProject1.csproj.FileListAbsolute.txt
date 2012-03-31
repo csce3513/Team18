@@ -1,18 +1,71 @@
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\test.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\road01_a.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\road01_b.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\road02_a.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\BG1.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\BG2.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\Terrain_Grass01_SR.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\Terrain_Grass02_SR.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\Forest 01a.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\TestProject1.dll
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\TestProject1.pdb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.exe
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.pdb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\obj\Debug\TestProject1.dll
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\obj\Debug\TestProject1.pdb
-C:\Users\asatou wagne\Team18\Team18\WindowsGame1\TestProject1\bin\Debug\Content\menu.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\obj\Debug\TestProject1.dll
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\obj\Debug\TestProject1.pdb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\test.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\road01_a.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\road01_b.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\road02_a.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\BG1.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\BG2.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\Terrain_Grass01_SR.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\Terrain_Grass02_SR.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\Forest 01a.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\test.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\road01_a.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\road01_b.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\road02_a.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\BG1.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\BG2.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Terrain_Grass01_SR.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Terrain_Grass02_SR.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Forest 01a.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Grass _amp_ Pebbles _32x32_.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\TestProject1.dll
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\TestProject1.pdb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.exe
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\WindowsGame1_Accessor.exe
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.pdb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\WindowsGame1_Accessor.pdb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\WindowsGame1Content.dll
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\menu.xnb
+C:\Users\Mitsu\Team18\WindowsGame1\TestProject1\bin\Debug\Content\menu.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\test.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\road01_a.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\road01_b.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\road02_a.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\BG1.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\BG2.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Terrain_Grass01_SR.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Terrain_Grass02_SR.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Forest 01a.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Grass _amp_ Pebbles _32x32_.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\menu.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\test.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\road01_a.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\road01_b.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\road02_a.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\BG1.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\BG2.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Terrain_Grass01_SR.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Terrain_Grass02_SR.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Forest 01a.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\menu.xnb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\TestProject1.dll
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\TestProject1.pdb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.exe
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\WindowsGame1Content.dll
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\WindowsGame1_Accessor.exe
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.pdb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\WindowsGame1_Accessor.pdb
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\obj\Debug\TestProject1.dll
+c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\obj\Debug\TestProject1.pdb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Moq.dll
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Moq.pdb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Moq.xml
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Tree.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Grass.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Tree.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Grass.xnb

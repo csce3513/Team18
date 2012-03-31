@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+//using Moq;
 
 
 namespace WindowsGame1
@@ -13,10 +14,10 @@ namespace WindowsGame1
     {
  
         //The current position of the Sprite
-        public Vector2 pos = new Vector2(0, 0);
+        protected Vector2 pos = new Vector2(0, 0);
 
         //The texture object used when drawing the sprite
-        private Texture2D tex;
+        protected Texture2D tex;
 
         //The asset name for the Sprite's Texture
         public string assetName;
@@ -62,6 +63,7 @@ namespace WindowsGame1
                 new Rectangle(0, 0, tex.Width, tex.Height),
                 Color.White, 0.0f, Vector2.Zero, Scale, SpriteEffects.None, 0);
         }
+
         public void updatePos(Vector2 newPos)
         {
             pos = newPos;
@@ -71,5 +73,19 @@ namespace WindowsGame1
         {
             throw new NotImplementedException();
         }
+
+
+        //For testing
+        public Vector2 getPos()
+        {
+            return pos;
+        }
+
+        //For testing
+        public Texture2D getTex()
+        {
+            return tex;
+        }
+
     }
 }

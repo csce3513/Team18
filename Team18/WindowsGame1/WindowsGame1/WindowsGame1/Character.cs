@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace WindowsGame1
 {
-    class Character : Sprite
+    class Character : AnimatedSprite
     {
         const string CHARACTER_ASSETNAME = "test";
         const int START_POSITION_X = 400;
