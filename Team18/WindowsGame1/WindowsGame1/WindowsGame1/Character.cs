@@ -20,23 +20,28 @@ namespace WindowsGame1
         const int MOVE_LEFT = -1;
         const int MOVE_RIGHT = 1;
 
+        //State Indicating Character status
         enum State
         {
             Walking, Running, Stationary
         }
+
         State mCurrentState = State.Walking;
 
+        //Direction and Speed are used for character movement
         Vector2 mDirection = Vector2.Zero;
         Vector2 mSpeed = Vector2.Zero;
 
         KeyboardState mPreviousKeyboardState;
 
+        //LoadCcontent from texture
         public void LoadContent(ContentManager theContentManager)
         {
             pos = new Vector2(START_POSITION_X, START_POSITION_Y);
             base.LoadContent(theContentManager, CHARACTER_ASSETNAME);
         }
 
+        //Update positon with some movement
         public void Update(GameTime theGameTime)
         {
             KeyboardState aCurrentKeyboardState = Keyboard.GetState();
@@ -48,6 +53,7 @@ namespace WindowsGame1
             base.Update(theGameTime, mSpeed, mDirection);
         }
 
+        //UpdateMovement will detect inputs, then assign speed and direction
         private void UpdateMovement(KeyboardState aCurrentKeyboardState)
         {
             if (mCurrentState == State.Walking)
@@ -78,5 +84,8 @@ namespace WindowsGame1
                 }
             }
         }
+
+       
+
     }
 }

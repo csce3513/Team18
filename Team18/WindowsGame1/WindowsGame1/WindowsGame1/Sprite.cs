@@ -12,9 +12,8 @@ namespace WindowsGame1
 {
     class Sprite
     {
- 
         //The current position of the Sprite
-        protected Vector2 pos = new Vector2(0, 0);
+        protected Vector2 mPos = new Vector2(0, 0);
 
         //The texture object used when drawing the sprite
         protected Texture2D tex;
@@ -27,8 +26,23 @@ namespace WindowsGame1
 
         //The amount to increase/decrease the size of the original sprite. 
         private float mScale = 1.0f;
-        
 
+        //ID to indentify the object
+        private int ObjectID;
+
+        //Set SpriteID
+        public int SpriteID
+        {
+            get { return ObjectID; }
+            set { ObjectID = value; }
+        }
+
+        public Vector2 pos
+        {
+            get { return mPos; }
+            set { mPos = value; }
+        }
+        
         //When the scale is modified through the property, the Size of the 
         //sprite is recalculated with the new scale applied.
         public float Scale
@@ -42,6 +56,17 @@ namespace WindowsGame1
             }
         }
 
+        //Default constructor
+        public Sprite()
+        { 
+
+        }
+
+        //Default Constructor with parameter
+        public Sprite(int ID) 
+        {
+            ObjectID = ID;
+        }
 
         public void LoadContent(ContentManager theContentManager, string theAssetName)
         {
@@ -53,7 +78,7 @@ namespace WindowsGame1
         //Update the Sprite and change it's position based on the passed in speed, direction and elapsed time.
         public void Update(GameTime theGameTime, Vector2 theSpeed, Vector2 theDirection)
         {
-            pos += theDirection * theSpeed * (float)theGameTime.ElapsedGameTime.TotalSeconds;
+           pos += theDirection * theSpeed * (float)theGameTime.ElapsedGameTime.TotalSeconds;
         }
 
         //Draw the sprite to the screen
@@ -74,12 +99,12 @@ namespace WindowsGame1
             throw new NotImplementedException();
         }
 
-
         //For testing
         public Vector2 getPos()
         {
             return pos;
         }
+
 
         //For testing
         public Texture2D getTex()

@@ -29,9 +29,13 @@ namespace WindowsGame1
         SpriteBatch spriteBatch;
         Sprite BG0;
         Sprite menu;
-        Sprite tree;
+        Sprite tree1;
+        Sprite tree2;
+        Sprite tree3;
 
         Character player;
+
+        Collision Collide;
 
         public Game1()
         {
@@ -55,10 +59,23 @@ namespace WindowsGame1
             //Player that can move around
             player = new Character();
 
+            //ID number 0 indicate character that is only one exist.
+            player.SpriteID = 0;
+
             //Backgrounds
             menu = new Sprite();
             BG0 = new Sprite();
-            tree = new Sprite();
+            
+            //ID 9xx indicate non object sprite
+            menu.SpriteID = 901;
+
+            //ID 1xx indicate stationary object
+            tree1 = new Sprite(101);
+            tree2 = new Sprite(102);
+            tree3 = new Sprite(103);
+
+            Collide = new Collision();
+                       
 
             base.Initialize();
         }
@@ -77,10 +94,25 @@ namespace WindowsGame1
             BG0.LoadContent(this.Content, "Grass");
             BG0.updatePos(new Vector2(0, 0));
             BG0.Scale = 3.0f;
-            tree.LoadContent(this.Content, "Tree");
-            tree.updatePos(new Vector2(100, 200));
+
+            tree1.LoadContent(this.Content, "Tree");
+            tree2.LoadContent(this.Content, "Tree");
+            tree3.LoadContent(this.Content, "Tree");
+            tree1.Scale = 0.8f;
+            tree2.Scale = 0.8f;
+            tree3.Scale = 0.8f;
+      
+            tree1.updatePos(new Vector2(200, 200));
+            tree2.updatePos(new Vector2(0, 0));
+            tree3.updatePos(new Vector2(500, 100));
 
             player.LoadContent(this.Content);
+            player.Scale = 1.5f;
+
+            Collide.addObject(player.pos, player.SpriteID, player.Texture.Height*1.5 -8 , player.Texture.Width* 1.5 -5);
+            Collide.addObject(tree1.pos, tree1.SpriteID, tree1.getTex().Height * 0.8, tree1.getTex().Width * 0.8);
+            Collide.addObject(tree2.pos, tree2.SpriteID, tree2.getTex().Height * 0.8, tree2.getTex().Width * 0.8);
+            Collide.addObject(tree3.pos, tree3.SpriteID, tree3.getTex().Height * 0.8, tree3.getTex().Width * 0.8);
 
             // TODO: use this.Content to load your game content here
         }
@@ -120,11 +152,17 @@ namespace WindowsGame1
             }
             else if (state == gamestate.play)
             {
+                Vector2 lastPos = player.pos;
+
                 if ((keystate.IsKeyDown(Keys.Escape) == true)
                     && (lastKeyState.IsKeyUp(Keys.Escape) == true))
                     state = gamestate.menu;
-
+                                
                 player.Update(gameTime);
+                Collide.UpdatePos(player.SpriteID, player.pos);
+
+                if (Collide.CollisionCheck(player.SpriteID))
+                    player.pos = lastPos;
             }
 
             lastKeyState = keystate;
@@ -149,7 +187,9 @@ namespace WindowsGame1
             if (state == gamestate.play)
             {
                 BG0.Draw(this.spriteBatch);
-                tree.Draw(this.spriteBatch);
+                tree1.Draw(this.spriteBatch);
+                tree2.Draw(this.spriteBatch);
+                tree3.Draw(this.spriteBatch);
 
                 player.Draw(this.spriteBatch);
             }
