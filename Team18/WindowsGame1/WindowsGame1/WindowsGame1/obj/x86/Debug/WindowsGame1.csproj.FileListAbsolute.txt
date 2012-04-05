@@ -66,3 +66,4 @@ C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debu
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
+C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
