@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\test.xnb</Output>
-      <Time>2012-03-02T14:59:50-06:00</Time>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\test.xnb</Output>
+      <Time>2012-04-03T18:48:47.8909811-05:00</Time>
     </Item>
     <Item>
       <Source>road01_a.bmp</Source>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb</Output>
       <Time>2012-03-02T14:59:50-06:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb</Output>
       <Time>2012-03-02T14:59:50-06:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb</Output>
       <Time>2012-03-02T14:59:50-06:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG1.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG1.xnb</Output>
       <Time>2012-02-10T12:12:30.1336405-06:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG2.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG2.xnb</Output>
       <Time>2012-03-02T14:59:50-06:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb</Output>
       <Time>2012-03-02T14:59:50-06:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb</Output>
       <Time>2012-03-02T14:59:50-06:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb</Output>
       <Time>2012-03-02T14:59:50-06:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb</Output>
       <Time>2012-03-02T14:59:50-06:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu.xnb</Output>
       <Time>2012-03-02T15:20:32-06:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass.xnb</Output>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass.xnb</Output>
       <Time>2012-03-30T20:08:53.4622649-05:00</Time>
     </Item>
     <Item>
@@ -115,8 +115,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Tree.xnb</Output>
-      <Time>2012-03-30T20:37:23.2350583-05:00</Time>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Tree.xnb</Output>
+      <Time>2012-04-03T18:41:25.5846826-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Enemy.png</Source>
+      <Name>Enemy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb</Output>
+      <Time>2012-04-04T15:22:18.009554-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -124,10 +133,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

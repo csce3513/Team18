@@ -80,6 +80,8 @@
   <ItemGroup>
     <Compile Include="AnimatedSprite.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="ActionHandler.cs" />
+    <Compile Include="Enemy.cs" />
     <Compile Include="Helpers\AssmblyUtilities.cs" />
     <Compile Include="Helpers\DeviceType.cs" />
     <Compile Include="Helpers\MockedGraphicsDeviceService.cs" />

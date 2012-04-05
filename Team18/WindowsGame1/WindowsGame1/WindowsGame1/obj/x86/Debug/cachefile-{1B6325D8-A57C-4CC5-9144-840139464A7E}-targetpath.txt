@@ -11,3 +11,4 @@ Content\Grass _amp_ Pebbles _32x32_.xnb
 Content\menu.xnb
 Content\Grass.xnb
 Content\Tree.xnb
+Content\Enemy.xnb
