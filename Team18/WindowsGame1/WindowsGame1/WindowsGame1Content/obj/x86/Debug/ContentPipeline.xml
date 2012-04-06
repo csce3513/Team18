@@ -38,24 +38,6 @@
       <Time>2012-03-02T14:59:50-06:00</Time>
     </Item>
     <Item>
-      <Source>BG1.bmp</Source>
-      <Name>BG1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG1.xnb</Output>
-      <Time>2012-02-10T12:12:30.1336405-06:00</Time>
-    </Item>
-    <Item>
-      <Source>BG2.bmp</Source>
-      <Name>BG2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG2.xnb</Output>
-      <Time>2012-03-02T14:59:50-06:00</Time>
-    </Item>
-    <Item>
       <Source>Terrain_Grass01_SR.png</Source>
       <Name>Terrain_Grass01_SR</Name>
       <Importer>TextureImporter</Importer>

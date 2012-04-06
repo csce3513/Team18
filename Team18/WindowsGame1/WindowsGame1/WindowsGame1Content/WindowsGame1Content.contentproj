@@ -54,20 +54,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BG1.bmp">
-      <Name>BG1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="BG2.bmp">
-      <Name>BG2</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Terrain_Grass01_SR.png">
       <Name>Terrain_Grass01_SR</Name>
       <Importer>TextureImporter</Importer>

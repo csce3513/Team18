@@ -42,7 +42,7 @@ namespace WindowsGame1
         }
 
         //Update positon with some movement
-        public void Update(GameTime theGameTime)
+        public void CharacterUpdate(GameTime theGameTime)
         {
             KeyboardState aCurrentKeyboardState = Keyboard.GetState();
 

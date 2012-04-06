@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -16,21 +17,22 @@ namespace WindowsGame1
         //These Lists contains Positon, texture info with ID.
         Vector2[] posList = new Vector2[10];
         int[] IDList = new int[10];
-        double[] HeightList = new double[10];
-        double[] WidthList = new double[10];
-             
-        
+        float[] HeightList = new float[10];
+        float[] WidthList = new float[10];
+        Vector2 LastStatus = new Vector2(0, 0);
+
+
         //Sprite Size
         int size = 0;
-        
+
         //Default Constructor
         public ActionHandler()
         {
-                      
+
         }
 
         //Adding Object
-        public void addObject(Vector2 Pos, int ID, double Height, double Width)
+        public void addObject(Vector2 Pos, int ID, float Height, float Width)
         {
             posList[size] = Pos;
             IDList[size] = ID;
@@ -42,27 +44,58 @@ namespace WindowsGame1
         //Position Update
         public void UpdatePos(int ID, Vector2 pos)
         {
-            posList[FindSprite(ID)] = pos;            
+            posList[FindSprite(ID)] = pos;
         }
 
-        //Collision checker will check all of object with assigned object
-        //When Collision detected return false
-        public bool CollisionCheck(int ID)
+        //May not need
+        public double getWidth(int ID)
         {
-            bool status = false;
+            return WidthList[FindSprite(ID)];
+        }
+        //May not need 
+        public double getHeight(int ID)
+        {
+            return HeightList[FindSprite(ID)];
+        }
+        //May not need 
+        public Vector2 getPos(int ID)
+        {
+            return posList[FindSprite(ID)];
+        }
+
+
+
+        //Collision checker will check all of object with assigned object
+        //When Collision detected, return vector2 that indicating how far intercepted
+        public Vector2 CollisionCheck(int ID)
+        {
+            Vector2 status = new Vector2(0, 0);
+            Vector2 Detection = new Vector2(0,0);
 
             int SubjectNum = FindSprite(ID);
-            
+
             for (int i = 0; i < size; i++)
                 if (i != SubjectNum)
-                    if (CollisionDetect(SubjectNum, i))
-                        status = true;
+                {
+                    if (status.X != 0 && status.Y != 0)
+                        return status;
 
+                    Detection = CollisionDetect(SubjectNum, i);
+
+                    //Normaly only one vector returned, so put each on status
+                    if (Detection != new Vector2(0, 0))
+                    {
+                        if (Detection.X != 0)
+                            status.X = Detection.X;
+                        if (Detection.Y != 0)
+                            status.Y = Detection.Y;
+                    }
+                }
             return status;
         }
 
         //Find sprite from ID, then return the number stored in List
-        private int FindSprite (int ID)
+        private int FindSprite(int ID)
         {
             for (int i = 0; i < size; i++)
                 if (IDList[i] == ID)
@@ -71,21 +104,24 @@ namespace WindowsGame1
             //not found return -1
             return -1;
         }
-       
+
 
         //Collsion detector will check if the two objects collides
         //Return true if collision detected
-        protected bool CollisionDetect(int n, int m)
+        protected Vector2 CollisionDetect(int n, int m)
         {
             //Postion, Height, and Width on Object1
             Vector2 Position1 = posList[n];
-            double Height1 = HeightList[n];
-            double Width1 = WidthList[n];
+            float Height1 = HeightList[n];
+            float Width1 = WidthList[n];
 
             //Positon, Height, and Width on Object2
             Vector2 Position2 = posList[m];
-            double Height2 = HeightList[m];
-            double Width2 = WidthList[m];
+            float Height2 = HeightList[m];
+            float Width2 = WidthList[m];
+
+            float diffY = 0;
+            float diffX = 0;
 
             //Right side of Object1 on left side of Object2
             if (Position1.X < Position2.X)
@@ -96,43 +132,173 @@ namespace WindowsGame1
                         //Bottom of object1 under top of object2. (intercect)
                         if (Position1.Y + Height1 > Position2.Y)
                         {
-                            return true;
+                            //Obtain difference between edges
+                            diffX = (Position1.X + Width1) - Position2.X;
+                            diffY = (Position1.Y + Height1) - Position2.Y;
+
+                            if (Math.Abs(diffX) >Math.Abs( diffY))
+                                return new Vector2(0, diffY);
+                            else
+                                return new Vector2(diffX, 0);
                         }
-                    }
+                    }//object1 below object2
                     else if (Position1.Y > Position2.Y)
-                            if (Position1.Y < Position2.Y + Height2)
-                                return true;
+                        if (Position1.Y < Position2.Y + Height2) //(intercect)
+                        {
+                            //Obtain difference between edges
+                            diffX = (Position1.X + Width1) - Position2.X;
+                            diffY = Position1.Y-(Position2.Y + Height2);
 
+                            if (Math.Abs(diffX) >Math.Abs( diffY))
+                                return new Vector2(0, diffY);
+                            else
+                                return new Vector2(diffX, 0);
 
+                        }
+
+            //Right side of Object2 on left side of Object1
             if (Position1.X > Position2.X)
                 if (Position1.X < Position2.X + Width2)
                     if (Position1.Y < Position2.Y)
                     {
                         if (Position1.Y + Height1 > Position2.Y)
                         {
-                            return true;
+                            diffX = Position1.X-(Position2.X + Width2);
+                            diffY = (Position1.Y + Height1) - Position2.Y;
+
+                            if (Math.Abs(diffX) >Math.Abs( diffY))
+                                return new Vector2(0, diffY);
+                            else
+                                return new Vector2(diffX, 0);
                         }
                     }
                     else if (Position1.Y > Position2.Y)
                         if (Position1.Y < Position2.Y + Height2)
-                            return true;
+                        {
+                            diffX =   Position1.X-(Position2.X + Width2);
+                            diffY = Position1.Y - (Position2.Y + Height2);
 
-           return false;
+                            if (Math.Abs(diffX) >Math.Abs( diffY))
+                                return new Vector2(0, diffY);
+                            else
+                                return new Vector2(diffX, 0);
+                        }
+
+            //This defines 4 boundaries on display.
+            if (Position1.X < 0)
+                diffX = Position1.X;
+            if (Position1.Y < 0)
+                diffY = Position1.Y;
+            if (Position1.X + Width1 > 800)
+                diffX = Position1.X + Width1 - 800;
+            if (Position1.Y + Height1 > 480)
+                diffY = Position1.Y + Height1 - 480;
+
+            if (diffX != 0 || diffY != 0)
+                return new Vector2(diffX, diffY);
+
+            //No collision agaist objects and boundaries detected
+            return new Vector2(0,0);
         }
 
 
-        //Check if Character is able to see the another object
-        //public Vector2 Visibility(int ID1, int ID2)
-        //{
-        //    int n = FindSprite(ID1);
-        //    int m = FindSprite(ID2);
-        //    Vector2 Position1 = posList[n];
-        //    Vector2 Position2 = posList[m];
+        /*
+         * Check if Character is able to see the another object
+         * ID1 is observer, ID2 is object. Calculate the straight line 
+         * between ID1 and ID2, then check if there is any object between them.
+         */
+        public Vector2 Visibility(int ID1, int ID2)
+        {
+            //Slope, Intercept, Y
+            //Right, left, Top , Bottom for Postion1 and 2 rectangle
 
-        //    double a = (Position1.Y - Position2.Y) / (Position1.X - Position2.X);
-        //    double x;
-            
-           
-        //}
+            float a, b, y1, y2,
+                right, left, top, bottom;
+
+
+            //Find object number
+            int n = FindSprite(ID1);
+            int m = FindSprite(ID2);
+            Vector2 Position1 = posList[n];
+            Vector2 Position2 = posList[m];
+
+            //Find Rectangle
+            //Right and left sides
+            if (Position1.X < Position2.X)
+            {
+                right = Position2.X + 2;
+                left = Position1.X -2 ;
+            }
+            else if (Position1.X > Position2.X)
+            {
+                right = Position1.X +2;
+                left = Position2.X -2;
+            }
+            else
+            {
+                right = Position1.X +2;
+                left = right -2;
+            }
+
+            //Top and bottom
+            if (Position1.Y > Position2.Y)
+            {
+                top = Position2.Y -2;
+                bottom = Position1.Y +2;
+            }
+            else if (Position1.Y < Position2.Y)
+            {
+                top = Position1.Y -2;
+                bottom = Position2.Y +2;
+            }
+            else
+            {
+                top = Position1.Y -2;
+                bottom = top +2;
+            }
+
+            //Get slope
+            a = (Position1.Y - Position2.Y) / (Position1.X - Position2.X);
+
+            //Get intercept
+            b = Position1.Y - a * Position1.X;
+
+            //check if there is any object between object1 and 2
+            for (int i = 0; i < size; i++)
+                //only obstacles considered
+                if (i != n && i != m)
+                {
+                    //line is not nearly vertical
+                    if (!(right+1 <= left && right-1 >=left))
+                    {
+                        //Obstacles Between position1 and 2 are considered
+                        if ((left <= posList[i].X && right >= posList[i].X + WidthList[i])
+                            || (top <= posList[i].Y && bottom >= posList[i].Y + HeightList[i]))
+                        {
+                            //Intersection between visible sight
+                            y1 = a * posList[i].X + b;
+                            y2 = a * (posList[i].X + WidthList[i]) + b;
+
+                            //Checking left top and right bottom to visible sight line
+                            if (a <= 0)
+                                if (posList[i].Y < y1 && (posList[i].Y + HeightList[i]) > y2)
+                                    return new Vector2(-999, -999);
+
+                            if (a > 0)
+                                if (posList[i].Y < y2 && (posList[i].Y + HeightList[i]) > y1)
+                                    return new Vector2(-999, -999);
+                        }
+
+
+                    }
+                    else //Line is nearly vertical, compare right and left on object to line 
+                        if (top > posList[i].Y && bottom < posList[i].Y + HeightList[i])
+                            if (posList[i].X < right && (posList[i].X + WidthList[i]) > right)
+                                return new Vector2(-999, -999);
+                }
+
+            return Position2;
+        }
+
     }
 }
