@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>test.png</Source>
+      <Name>test</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\test.xnb</Output>
+      <Time>2012-04-03T18:48:47.8909811-05:00</Time>
+    </Item>
+    <Item>
+      <Source>road01_a.bmp</Source>
+      <Name>road01_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb</Output>
+      <Time>2012-03-02T14:59:50-06:00</Time>
+    </Item>
+    <Item>
+      <Source>road01_b.bmp</Source>
+      <Name>road01_b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb</Output>
+      <Time>2012-03-02T14:59:50-06:00</Time>
+    </Item>
+    <Item>
+      <Source>road02_a.bmp</Source>
+      <Name>road02_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb</Output>
+      <Time>2012-03-02T14:59:50-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Terrain_Grass01_SR.png</Source>
+      <Name>Terrain_Grass01_SR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb</Output>
+      <Time>2012-03-02T14:59:50-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Terrain_Grass02_SR.jpg</Source>
+      <Name>Terrain_Grass02_SR</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb</Output>
+      <Time>2012-03-02T14:59:50-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Forest 01a.JPG</Source>
+      <Name>Forest 01a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb</Output>
+      <Time>2012-03-02T14:59:50-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Grass _amp_ Pebbles _32x32_.jpg</Source>
+      <Name>Grass _amp_ Pebbles _32x32_</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb</Output>
+      <Time>2012-03-02T14:59:50-06:00</Time>
+    </Item>
+    <Item>
+      <Source>menu.png</Source>
+      <Name>menu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu.xnb</Output>
+      <Time>2012-03-02T15:20:32-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Grass.jpg</Source>
+      <Name>Grass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass.xnb</Output>
+      <Time>2012-03-30T20:08:53.4622649-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Tree.png</Source>
+      <Name>Tree</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Tree.xnb</Output>
+      <Time>2012-04-03T18:41:25.5846826-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Enemy.png</Source>
+      <Name>Enemy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb</Output>
+      <Time>2012-04-04T15:22:18.009554-05:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-05:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-02-09T05:40:06.8302433-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
