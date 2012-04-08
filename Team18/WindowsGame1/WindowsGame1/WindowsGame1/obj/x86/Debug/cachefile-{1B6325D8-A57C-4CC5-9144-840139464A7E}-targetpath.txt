@@ -10,3 +10,6 @@ Content\menu.xnb
 Content\Grass.xnb
 Content\Tree.xnb
 Content\Enemy.xnb
+Content\Help.xnb
+Content\menu1.xnb
+Content\Player_SpriteSheet.xnb
