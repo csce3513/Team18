@@ -16,19 +16,20 @@ namespace WindowsGame1
     /// This is the main type for your game
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
-    { 
+    {
         enum gamestate
         {
-            menu, play
+            menu, play, help
         }
 
         gamestate state;
         KeyboardState keystate;
-        KeyboardState lastKeyState; 
+        KeyboardState lastKeyState;
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Sprite BG0;
         Sprite menu;
+        Sprite help;
         Sprite tree1;
         Sprite tree2;
         Sprite tree3;
@@ -69,8 +70,9 @@ namespace WindowsGame1
 
             //Backgrounds
             menu = new Sprite();
+            help = new Sprite();
             BG0 = new Sprite();
-            
+
             //ID 9xx indicate non object sprite
             menu.SpriteID = 901;
 
@@ -81,7 +83,7 @@ namespace WindowsGame1
 
             //Action Handling including Collision Detection and EnemySight
             Action = new ActionHandler();
-                       
+
 
             base.Initialize();
         }
@@ -96,7 +98,8 @@ namespace WindowsGame1
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //Background
-            menu.LoadContent(this.Content, "Menu");
+            menu.LoadContent(this.Content, "Menu1");
+            help.LoadContent(this.Content, "Help");
             BG0.LoadContent(this.Content, "Grass");
             BG0.updatePos(new Vector2(0, 0));
             BG0.Scale = 3.0f;
@@ -110,7 +113,7 @@ namespace WindowsGame1
             tree1.Scale = 0.8f;
             tree2.Scale = 0.8f;
             tree3.Scale = 0.8f;
-      
+
             //Set Position
             tree1.updatePos(new Vector2(200, 200));
             tree2.updatePos(new Vector2(600, 300));
@@ -119,11 +122,11 @@ namespace WindowsGame1
             //Movable sprites
             player.LoadContent(this.Content);
             player.Scale = 1.5f;
-            
+
             Enemy1.LoadContent(this.Content);
 
             //Add object information to ActionHandler
-            Action.addObject(player.pos, player.SpriteID, player.Texture.Height*1.5f -8 , player.Texture.Width* 1.5f -5);
+            Action.addObject(player.pos, player.SpriteID, player.Texture.Height * 1.5f - 8, player.Texture.Width * 1.5f - 5);
             Action.addObject(tree1.pos, tree1.SpriteID, tree1.getTex().Height * 0.8f, tree1.getTex().Width * 0.8f);
             Action.addObject(tree2.pos, tree2.SpriteID, tree2.getTex().Height * 0.8f, tree2.getTex().Width * 0.8f);
             Action.addObject(tree3.pos, tree3.SpriteID, tree3.getTex().Height * 0.8f, tree3.getTex().Width * 0.8f);
@@ -150,12 +153,12 @@ namespace WindowsGame1
         {
             //Get keyboard state
             keystate = Keyboard.GetState();
-            
+
             //At Menu screen
             if (state == gamestate.menu)
             {
                 // Allows the game to exit
-                if ((keystate.IsKeyDown(Keys.Escape) == true) 
+                if ((keystate.IsKeyDown(Keys.Escape) == true)
                     && (lastKeyState.IsKeyUp(Keys.Escape) == true))
                     this.Exit();
 
@@ -165,12 +168,29 @@ namespace WindowsGame1
                 {
                     state = gamestate.play;
                 }
+
+                //get player to help menu
+                if ((keystate.IsKeyDown(Keys.F1) == true)
+                    && (lastKeyState.IsKeyUp(Keys.F1) == true))
+                {
+                    state = gamestate.help;
+                }
+            }
+
+
+                // allow player to quit help screen
+            else if (state == gamestate.help)
+            {
+                if ((keystate.IsKeyDown(Keys.Escape) == true)
+                    && (lastKeyState.IsKeyUp(Keys.Escape) == true))
+                    state = gamestate.menu;
+
             }
             //At playing screen    
             else if (state == gamestate.play)
             {
                 Vector2 currentPos;
-                Vector2 Diff = new Vector2(0,0);
+                Vector2 Diff = new Vector2(0, 0);
 
                 // GO to Menu state
                 if ((keystate.IsKeyDown(Keys.Escape) == true)
@@ -178,8 +198,8 @@ namespace WindowsGame1
                     state = gamestate.menu;
 
                 //Checks if the enemy can see the player, return -999.-999 or player.pos
-                Enemy1.TargetPosition = Action.Visibility(Enemy1.SpriteID, player.SpriteID) ;
-                         
+                Enemy1.TargetPosition = Action.Visibility(Enemy1.SpriteID, player.SpriteID);
+
                 //Player movement
                 player.CharacterUpdate(gameTime);
                 Enemy1.EnemyUpdate(gameTime);
@@ -209,7 +229,7 @@ namespace WindowsGame1
                 //Same as character, collision detection.
                 Diff = Action.CollisionCheck(Enemy1.SpriteID);
 
-                if (Math.Abs(Diff.X)> 0)
+                if (Math.Abs(Diff.X) > 0)
                 {
                     currentPos = Enemy1.pos;
                     currentPos.X -= Diff.X;
@@ -242,6 +262,12 @@ namespace WindowsGame1
                 menu.Draw(this.spriteBatch);
             }
 
+            if (state == gamestate.help)
+            {
+                help.Draw(this.spriteBatch);
+            }
+
+
             if (state == gamestate.play)
             {
                 //Drawing Backgrounds and objects 
@@ -259,6 +285,8 @@ namespace WindowsGame1
             base.Draw(gameTime);
         }
 
- 
+
     }
 }
+
+
