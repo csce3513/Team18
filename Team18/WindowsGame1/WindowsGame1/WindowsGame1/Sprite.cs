@@ -22,14 +22,16 @@ namespace WindowsGame1
         public string assetName;
 
         //The Size of the Sprite (with scale applied)
-        public Rectangle size;
+        public Rectangle sourceRect;
 
         //The amount to increase/decrease the size of the original sprite. 
         private float mScale = 1.0f;
 
         //ID to indentify the object
         private int ObjectID;
+        //gamer  timer
 
+        public float timer = 0.0f;
         //Set SpriteID
         public int SpriteID
         {
@@ -52,7 +54,7 @@ namespace WindowsGame1
             {
                 mScale = value;
                 //Recalculate the Size of the Sprite with the new scale
-                size = new Rectangle(0, 0, (int)(tex.Width * Scale), (int)(tex.Height * Scale));
+                sourceRect = new Rectangle(0, 0, (int)(tex.Width * Scale), (int)(tex.Height * Scale));
             }
         }
 
@@ -72,7 +74,7 @@ namespace WindowsGame1
         {
             tex = theContentManager.Load<Texture2D>(theAssetName);
             assetName = theAssetName;
-            size = new Rectangle(0, 0, (int)(tex.Width * Scale), (int)(tex.Height * Scale));
+            sourceRect = new Rectangle(0, 0, (int)(tex.Width * Scale), (int)(tex.Height * Scale));
         }
 
         //Update the Sprite and change it's position based on the passed in speed, direction and elapsed time.

@@ -11,7 +11,7 @@ namespace WindowsGame1
 {
     class Character : AnimatedSprite
     {
-        const string CHARACTER_ASSETNAME = "test";
+        const string CHARACTER_ASSETNAME = "Player_SpriteSheet";
         const int START_POSITION_X = 400;
         const int START_POSITION_Y = 250;
         const int CHARACTER_SPEED = 160;

@@ -115,11 +115,15 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="menu1.png">
       <Name>menu1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Player_SpriteSheet.png">
       <Name>Player_SpriteSheet</Name>
       <Importer>TextureImporter</Importer>

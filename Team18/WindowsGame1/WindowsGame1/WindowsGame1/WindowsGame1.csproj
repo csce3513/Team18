@@ -82,6 +82,7 @@
     <Compile Include="Character.cs" />
     <Compile Include="ActionHandler.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="Game1.cs" />
     <Compile Include="Helpers\AssmblyUtilities.cs" />
     <Compile Include="Helpers\DeviceType.cs" />
     <Compile Include="Helpers\MockedGraphicsDeviceService.cs" />
@@ -89,7 +90,6 @@
     <Compile Include="Menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Game1.cs" />
     <Compile Include="Sprite.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +97,7 @@
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
+    <Content Include="Player_SpriteSheet.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WindowsGame1Content\WindowsGame1Content.contentproj">

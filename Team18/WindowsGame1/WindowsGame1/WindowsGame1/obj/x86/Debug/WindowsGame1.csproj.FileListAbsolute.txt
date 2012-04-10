@@ -15,12 +15,10 @@ C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\W
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb
-C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG2.xnb
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
-C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG1.xnb
 C:\Users\Mitsu\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\test.xnb
 C:\Users\Mitsu\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
 C:\Users\Mitsu\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
@@ -48,6 +46,8 @@ C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debu
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb
+C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG1.xnb
+C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\BG2.xnb
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb
@@ -64,7 +64,120 @@ C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debu
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
-C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
-C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Help.xnb
-C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu1.xnb
-C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player_SpriteSheet.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Help.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu1.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\test.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Tree.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Help.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu1.xnb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.pdb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.xml
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player_SpriteSheet.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\test.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Tree.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Help.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu1.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player_SpriteSheet.xnb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.pdb
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.xml
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\test.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Tree.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Help.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu1.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player_SpriteSheet.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.pdb
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.xml
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\test.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\menu.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\Grass.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\Tree.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\Help.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\menu1.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Content\Player_SpriteSheet.xnb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Moq.pdb
+C:\Users\sixbert\Desktop\WindowsGame1\bin\x86\Debug\Moq.xml
+C:\Users\sixbert\Desktop\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sixbert\Desktop\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\sixbert\Desktop\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Desktop\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\test.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass01_SR.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\Terrain_Grass02_SR.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\Forest 01a.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\menu.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\Grass.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\Tree.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\Help.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\menu1.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Content\Player_SpriteSheet.xnb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Moq.pdb
+C:\Users\sixbert\Team18.back\WindowsGame1\bin\x86\Debug\Moq.xml
+C:\Users\sixbert\Team18.back\WindowsGame1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sixbert\Team18.back\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\sixbert\Team18.back\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\sixbert\Team18.back\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb

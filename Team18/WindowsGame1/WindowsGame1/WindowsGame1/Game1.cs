@@ -126,12 +126,13 @@ namespace WindowsGame1
             Enemy1.LoadContent(this.Content);
 
             //Add object information to ActionHandler
-            Action.addObject(player.pos, player.SpriteID, player.Texture.Height * 1.5f - 8, player.Texture.Width * 1.5f - 5);
+            Action.addObject(player.pos, player.SpriteID, player.Texture.Height * 1.5f - 8, 30 * 1.5f - 10);
             Action.addObject(tree1.pos, tree1.SpriteID, tree1.getTex().Height * 0.8f, tree1.getTex().Width * 0.8f);
             Action.addObject(tree2.pos, tree2.SpriteID, tree2.getTex().Height * 0.8f, tree2.getTex().Width * 0.8f);
             Action.addObject(tree3.pos, tree3.SpriteID, tree3.getTex().Height * 0.8f, tree3.getTex().Width * 0.8f);
             Action.addObject(Enemy1.pos, Enemy1.SpriteID, Enemy1.getTex().Height, Enemy1.getTex().Width);
 
+            player.Animation(Content, "Player_SpriteSheet", 30, 26, 10);
             // TODO: use this.Content to load your game content here
         }
 
@@ -202,6 +203,7 @@ namespace WindowsGame1
 
                 //Player movement
                 player.CharacterUpdate(gameTime);
+                player.HandleSourceRect(gameTime);
                 Enemy1.EnemyUpdate(gameTime);
 
                 //ActionHandler needs to know updated position
@@ -277,7 +279,7 @@ namespace WindowsGame1
                 tree3.Draw(this.spriteBatch);
                 Enemy1.Draw(this.spriteBatch);
 
-                player.Draw(this.spriteBatch);
+                player.animateDraw(this.spriteBatch);
             }
 
             spriteBatch.End();
