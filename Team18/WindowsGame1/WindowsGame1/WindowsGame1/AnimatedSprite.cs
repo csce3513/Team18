@@ -19,6 +19,7 @@ namespace WindowsGame1
         float interval  = 250f;
         //Current frame holder (start at 1)
         int currentFrame = 1;
+      public  int currentRow;
         //Width of a single sprite image, not the whole Sprite Sheet
         int frameWidth ;
         //Height of a single sprite image, not the whole Sprite Sheet
@@ -74,11 +75,41 @@ namespace WindowsGame1
             {
                 currentFrame = 0;
             }
+            if (currentRow == 0) 
+            {   
 
-            sourceRect = new Rectangle(currentFrame * frameWidth, 0, frameWidth, frameHeight);
-            origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
+               
+                sourceRect = new Rectangle(currentFrame * frameWidth, frameHeight*currentRow, frameWidth, frameHeight);
+                origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
             
-        //  base.Update(gameTime);
+            }
+            if (currentRow == 1)
+            {
+               // currentRow = frameHeight*2;
+                sourceRect = new Rectangle(currentFrame * frameWidth, frameHeight * currentRow, frameWidth, frameHeight);
+               origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
+            
+
+            }
+            if (currentRow == 2)
+            {
+                sourceRect = new Rectangle(currentFrame * frameWidth, frameHeight * currentRow, frameWidth, frameHeight);
+                origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
+
+            }
+            if (currentRow == 3)
+            {
+                sourceRect = new Rectangle(currentFrame * frameWidth, frameHeight * currentRow, frameWidth, frameHeight);
+                origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
+
+            }
+            if (currentRow == 4)
+            {
+                sourceRect = new Rectangle(currentFrame * frameWidth, frameHeight * currentRow, frameWidth, frameHeight);
+                origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
+
+            }
+        //base.Update(gameTime);
            base.Update(gameTime, mSpeed, mDirection);
         }
 
@@ -86,7 +117,7 @@ namespace WindowsGame1
         {
            
             
-            theSpriteBatch.Draw(tex, pos,
+             theSpriteBatch.Draw(tex, pos,
                sourceRect,
                Color.White, 0.0f, Vector2.Zero, Scale, SpriteEffects.None, 0);
         

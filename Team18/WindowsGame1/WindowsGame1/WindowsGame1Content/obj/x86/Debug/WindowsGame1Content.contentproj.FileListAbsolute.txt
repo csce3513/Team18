@@ -2,8 +2,5 @@ c:\users\aslone\documents\visual studio 2010\Projects\WindowsGame1\WindowsGame1\
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Mitsu\Team18\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Mitsu\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\sixbert\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\sixbert\Team18\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\sixbert\Team18.back\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\sixbert\Desktop\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\sixbert\Team18.back\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Daniel\Downloads\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\WindowsGame1Content.contentprojResolveAssemblyReference.cache
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -11,9 +11,9 @@ namespace WindowsGame1
 {
     class EnemyCharacter : AnimatedSprite
     {
-        const string CHARACTER_ASSETNAME = "Enemy";
-        const int START_POSITION_X = 600;
-        const int START_POSITION_Y = 250;
+        const string CHARACTER_ASSETNAME = "Enemy1_SpriteSheet";
+        static float START_POSITION_X = 600;
+        static float START_POSITION_Y = 250;
         const int CHARACTER_SPEED = 100;
         const int MOVE_UP = -1;
         const int MOVE_DOWN = 1;
@@ -44,6 +44,18 @@ namespace WindowsGame1
             get { return TargetPos; }
             set { TargetPos = value; }
         }
+
+        public Vector2 FirstPos
+        {
+            get { return new Vector2(START_POSITION_X, START_POSITION_Y); }
+            set
+            {
+                START_POSITION_X = value.X;
+                START_POSITION_Y = value.Y;
+                pos = value;
+            }
+        }
+
 
         //LoadCcontent from texture
         public void LoadContent(ContentManager theContentManager)

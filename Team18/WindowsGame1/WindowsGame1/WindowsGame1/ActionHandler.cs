@@ -14,16 +14,28 @@ namespace WindowsGame1
 
     class ActionHandler
     {
-        //These Lists contains Positon, texture info with ID.
-        Vector2[] posList = new Vector2[10];
-        int[] IDList = new int[10];
-        float[] HeightList = new float[10];
-        float[] WidthList = new float[10];
-        Vector2 LastStatus = new Vector2(0, 0);
+        //PosList indicate Position of each item
+        private Vector2[] posList = new Vector2[20];
 
+        //IDlist indicate each ID
+        private int[] IDList = new int[20];
 
+        //Height and Width list indicate height and width of object
+        private float[] HeightList = new float[20];
+        private float[] WidthList = new float[20];
+
+        //InGame indicate if the item is in the game
+        private bool[] InGame = new bool[20];
+        
+        //CharacterStatus indicate if player plays(1), moves to next level(2),
+        //Or win the game(3), lose(4). First, set as playing.
+        private int CharacterStatus = 1;
+        
         //Sprite Size
         int size = 0;
+
+        //BoundaryDetection
+        bool Boundary;
 
         //Default Constructor
         public ActionHandler()
@@ -31,15 +43,37 @@ namespace WindowsGame1
 
         }
 
+        public int CharaceterState
+        {
+            get { return CharacterStatus; }
+            set { CharacterStatus = value; }
+        }
+ 
         //Adding Object
         public void addObject(Vector2 Pos, int ID, float Height, float Width)
         {
+            Pos.X += Width * 0.2f;
+            Pos.Y += Height * 0.2f;
             posList[size] = Pos;
             IDList[size] = ID;
-            HeightList[size] = Height;
-            WidthList[size] = Width;
+            HeightList[size] = Height*0.8f;
+            WidthList[size] = Width*0.8f;
+            InGame[size] = true;
             size++;
         }
+
+        //Ignore the item from Collision Detection
+        public void IgnoreObject(int ID)
+        {
+            InGame[FindSprite(ID)] = false;
+        }
+
+        //Put object into Collision Detection
+        public void RecognizeObject(int ID)
+        {
+            InGame[FindSprite(ID)] = true;
+        }
+
 
         //Position Update
         public void UpdatePos(int ID, Vector2 pos)
@@ -75,16 +109,31 @@ namespace WindowsGame1
             int SubjectNum = FindSprite(ID);
 
             for (int i = 0; i < size; i++)
-                if (i != SubjectNum)
+                if (i != SubjectNum && InGame[i])
                 {
                     if (status.X != 0 && status.Y != 0)
                         return status;
 
+                    Boundary = false;
                     Detection = CollisionDetect(SubjectNum, i);
 
-                    //Normaly only one vector returned, so put each on status
                     if (Detection != new Vector2(0, 0))
                     {
+                        //No boundaryCollision included
+                        if (!Boundary)
+                        {
+                            //Collide with emeny means LOSE
+                            if (200 <= IDList[i] && IDList[i] < 300 && SubjectNum == 0)
+                                CharacterStatus = 4;
+                            //Collide with Zelda means WIN
+                            else if (1 == IDList[i] && SubjectNum == 0)
+                                CharacterStatus = 3;
+                            //Collide with Exit to Next means go to next level
+                            else if (501 == IDList[i] && SubjectNum == 0)
+                                CharacterStatus = 2;
+                        }
+
+                        //Normaly only one vector returned, so put each on status
                         if (Detection.X != 0)
                             status.X = Detection.X;
                         if (Detection.Y != 0)
@@ -195,8 +244,11 @@ namespace WindowsGame1
                 diffY = Position1.Y + Height1 - 480;
 
             if (diffX != 0 || diffY != 0)
+            {
+                //BoundaryCollisionDetected
+                Boundary = true;
                 return new Vector2(diffX, diffY);
-
+            }
             //No collision agaist objects and boundaries detected
             return new Vector2(0,0);
         }

@@ -41,6 +41,7 @@
     <Reference Include="Moq">
       <HintPath>..\..\..\Moq.4.0.10827\NET40\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework.Royale" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -57,7 +58,9 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionHandlerTest.cs" />
     <Compile Include="CharacterTest.cs" />
+    <Compile Include="EnemyCharacterTest.cs" />
     <Compile Include="Game1Test.cs" />
     <Compile Include="MenuTest.cs" />
     <Compile Include="ProgramTest.cs" />
