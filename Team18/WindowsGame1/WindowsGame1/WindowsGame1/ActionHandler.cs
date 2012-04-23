@@ -50,14 +50,12 @@ namespace WindowsGame1
         }
  
         //Adding Object
-        public void addObject(Vector2 Pos, int ID, float Height, float Width)
+        public void addObject(Vector2 Pos, int ID, float Width, float Height)
         {
-            Pos.X += Width * 0.2f;
-            Pos.Y += Height * 0.2f;
             posList[size] = Pos;
             IDList[size] = ID;
-            HeightList[size] = Height*0.8f;
-            WidthList[size] = Width*0.8f;
+            HeightList[size] = Height;
+            WidthList[size] = Width;
             InGame[size] = true;
             size++;
         }
@@ -123,11 +121,15 @@ namespace WindowsGame1
                         if (!Boundary)
                         {
                             //Collide with emeny means LOSE
+                            //ID indicate Enemy, Subject has to be Character
                             if (200 <= IDList[i] && IDList[i] < 300 && SubjectNum == 0)
                                 CharacterStatus = 4;
+
                             //Collide with Zelda means WIN
+                            //ID1 is Princess
                             else if (1 == IDList[i] && SubjectNum == 0)
                                 CharacterStatus = 3;
+
                             //Collide with Exit to Next means go to next level
                             else if (501 == IDList[i] && SubjectNum == 0)
                                 CharacterStatus = 2;

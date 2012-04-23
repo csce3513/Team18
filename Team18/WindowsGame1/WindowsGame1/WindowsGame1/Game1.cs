@@ -22,33 +22,35 @@ namespace WindowsGame1
             menu, play, help
         }
 
+        //GameMaps and Backgraound. New map goes by Third Forth... so on
         enum gamemap
         {
             start, second, final, lose, win
         }
 
-        
         gamestate state;
+        gamemap MapState;
+        
         KeyboardState keystate;
         KeyboardState lastKeyState;
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
         Sprite BG0;
         Sprite menu;
         Sprite help;
-        Sprite tree1;
-        Sprite tree2;
-        Sprite tree3;
-        EnemyCharacter Enemy1;
-        
-
-        Dragon Enemy2;
-        PrincessZelda Zelda;
-        Sprite Arrow;
-        gamemap MapState;
         Sprite Thanks;
         Sprite Blood;
 
+        Sprite tree1;
+        Sprite tree2;
+        Sprite tree3;
+        Sprite Arrow;
+        
+        EnemyCharacter Enemy1;
+        Dragon Enemy2;
+        
+        PrincessZelda Zelda;               
         Character player;
 
         ActionHandler Action;
@@ -131,10 +133,13 @@ namespace WindowsGame1
             BG0.LoadContent(this.Content, "Grass");
             BG0.updatePos(new Vector2(0, 0));
             BG0.Scale = 3.0f;
+
+            //Lose Screen
             Blood.LoadContent(this.Content, "Blood");
             Blood.Scale = 0.9f;
-            Thanks.LoadContent(this.Content, "Thanks");
 
+            //Win Screen
+            Thanks.LoadContent(this.Content, "Thanks");
             Thanks.updatePos(new Vector2(0, -150));
 
             //Trees as Obstacle
@@ -163,15 +168,15 @@ namespace WindowsGame1
             Zelda.Scale = 1.5f;
 
             //Add object information to ActionHandler
-            Action.addObject(player.pos, player.SpriteID, 26 * 1.5f - 8, 30 * 1.5f - 5);
-            Action.addObject(tree1.pos, tree1.SpriteID, tree1.getTex().Height * 0.8f, tree1.getTex().Width * 0.8f);
-            Action.addObject(tree2.pos, tree2.SpriteID, tree2.getTex().Height * 0.8f, tree2.getTex().Width * 0.8f);
-            Action.addObject(tree3.pos, tree3.SpriteID, tree3.getTex().Height * 0.8f, tree3.getTex().Width * 0.8f);
-            Action.addObject(Enemy1.pos, Enemy1.SpriteID, 40, 52);
-            Action.addObject(Zelda.pos, Zelda.SpriteID, Zelda.getTex().Height * 1.5f, Zelda.getTex().Width * 1.5f);
-            Action.addObject(new Vector2(775, 250), Arrow.SpriteID, Arrow.getTex().Height, Arrow.getTex().Width); 
-
-            Action.addObject(Enemy2.pos, Enemy2.SpriteID, 90, 50);
+            Action.addObject(player.pos, player.SpriteID, 30 * 1.5f - 15, 26 * 1.5f - 8);
+            Action.addObject(tree1.pos, tree1.SpriteID, tree1.getTex().Width * 0.8f, tree1.getTex().Height * 0.8f);
+            Action.addObject(tree2.pos, tree2.SpriteID, tree2.getTex().Width * 0.8f, tree2.getTex().Height * 0.8f);
+            Action.addObject(tree3.pos, tree3.SpriteID, tree3.getTex().Width * 0.8f, tree3.getTex().Height * 0.8f);
+            Action.addObject(Enemy1.pos, Enemy1.SpriteID, 48, 38);
+            Action.addObject(Enemy2.pos, Enemy2.SpriteID, 45, 80);
+            Action.addObject(Zelda.pos, Zelda.SpriteID, Zelda.getTex().Width * 1.5f, Zelda.getTex().Height * 1.5f);
+            Action.addObject(new Vector2(775, 250), Arrow.SpriteID, Arrow.getTex().Width, Arrow.getTex().Height); 
+                        
 
             player.Animation(Content, "Player_SpriteSheet", 30, 26, 10);
             Enemy2.Animation(Content, "finalflyingdragon", 96, 96, 4);
@@ -216,10 +221,14 @@ namespace WindowsGame1
                     && (lastKeyState.IsKeyUp(Keys.Space) == true))
                 {
                     state = gamestate.play;
+
+                    //Load First Map
                     MapState = gamemap.start;
+                    
+                    //Healthy. Default state of player
                     Action.CharaceterState = 1;
 
-                    //Set Position
+                    //Set Position for Each objects
                     tree1.updatePos(new Vector2(200, 200));
                     tree2.updatePos(new Vector2(600, 300));
                     tree3.updatePos(new Vector2(500, 100)); 
@@ -234,7 +243,7 @@ namespace WindowsGame1
                     Action.UpdatePos(tree3.SpriteID, tree3.pos);
 
 
-                    //Ignore objects that is not on the map from CollisionDetect
+                    //Ignore objects that is not on the map for CollisionDetect
                     Action.IgnoreObject(202);
                     Action.IgnoreObject(1);
                 }
@@ -268,12 +277,13 @@ namespace WindowsGame1
                     state = gamestate.menu;
 
                 //First(default) map setting
+                //Enemy and Player action has to be called here
                 if (MapState == gamemap.start)
                 {
                     //Checks if the enemy can see the player, return -999.-999 or player.pos
                     Enemy1.TargetPosition = Action.Visibility(Enemy1.SpriteID, player.SpriteID);
 
-                    //Player movement
+                    //Player and Enemy movement
                     player.CharacterUpdate(gameTime);
                     player.HandleSourceRect(gameTime);
                     Enemy1.EnemyUpdate(gameTime);
@@ -283,8 +293,10 @@ namespace WindowsGame1
                     Action.UpdatePos(player.SpriteID, player.pos);
                     Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
 
-                    //Collision detection, moving back to non-collide position
+                    //Collision detection, moving back to non-collide position                    
                     Diff = Action.CollisionCheck(player.SpriteID);
+
+                    //In collision check, also checked Lose and Win status
                     player.status = Action.CharaceterState; 
 
                     //Collide against a object on X axis
@@ -317,7 +329,8 @@ namespace WindowsGame1
                         currentPos.Y -= Diff.Y;
                         Enemy1.pos = currentPos;
                     }
-
+                    //This means Move to Next map
+                    //Replace Objects for the New Map
                     if (Action.CharaceterState == 2)
                     {
                         MapState = gamemap.second;
@@ -341,14 +354,16 @@ namespace WindowsGame1
                         Action.UpdatePos(tree2.SpriteID, tree2.pos);
                         Action.UpdatePos(tree3.SpriteID, tree3.pos);
                     }
+                    //Win save the Princess
                     else if (Action.CharaceterState == 3)
                         MapState = gamemap.win;
+                    //Lose killed by Enemy
                     else if (Action.CharaceterState == 4)
                         MapState = gamemap.lose;
 
 
                 }
-
+                //Second Map basically same as First except Enamy2 added here
                 else if (MapState == gamemap.second)
                 {
 
@@ -356,12 +371,14 @@ namespace WindowsGame1
                     Enemy1.TargetPosition = Action.Visibility(Enemy1.SpriteID, player.SpriteID);
                     Enemy2.TargetPosition = Action.Visibility(Enemy2.SpriteID, player.SpriteID);
 
-                    //Player movement
-                    player.CharacterUpdate(gameTime);
-                    player.HandleSourceRect(gameTime);
+                    //Player and Enemy movement
+                    player.CharacterUpdate(gameTime);                    
                     Enemy1.EnemyUpdate(gameTime);
-                    Enemy1.HandleSourceRect(gameTime);
                     Enemy2.EnemyUpdate(gameTime);
+
+                    //Player and Enemy Animation Rectangle Handle
+                    player.HandleSourceRect(gameTime);
+                    Enemy1.HandleSourceRect(gameTime);                    
                     Enemy2.HandleSourceRect(gameTime);
 
                     //ActionHandler needs to know updated position
@@ -456,7 +473,7 @@ namespace WindowsGame1
             {
                 if (MapState == gamemap.start)
                 {
-                    //Drawing Backgrounds and objects 
+                    //Drawing Backgrounds and objects that are on the Map
                     BG0.Draw(this.spriteBatch);
                     tree1.Draw(this.spriteBatch);
                     tree2.Draw(this.spriteBatch);
@@ -468,7 +485,7 @@ namespace WindowsGame1
                 //Drawing second map
                 else if (MapState == gamemap.second)
                 {
-                    //Drawing Backgrounds and objects 
+                    //Drawing Backgrounds and objects that are on the Map
                     BG0.Draw(this.spriteBatch);
                     tree1.Draw(this.spriteBatch);
                     tree2.Draw(this.spriteBatch);
