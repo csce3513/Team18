@@ -54,41 +54,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Terrain_Grass01_SR.png">
-      <Name>Terrain_Grass01_SR</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Terrain_Grass02_SR.jpg">
-      <Name>Terrain_Grass02_SR</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Forest 01a.JPG">
-      <Name>Forest 01a</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Grass _amp_ Pebbles _32x32_.jpg">
-      <Name>Grass _amp_ Pebbles _32x32_</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="menu.png">
-      <Name>menu</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Grass.jpg">
       <Name>Grass</Name>
       <Importer>TextureImporter</Importer>
@@ -180,13 +145,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Blood_YOULOSE.png">
-      <Name>Blood_YOULOSE</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="ArrowSheet.png">
       <Name>ArrowSheet</Name>
       <Importer>TextureImporter</Importer>
@@ -196,11 +154,6 @@
       <Name>audioHome</Name>
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
-    </Compile>
-    <Compile Include="Blood_bak.png">
-      <Name>Blood_bak</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
     </Compile>
     <Compile Include="collisionAudio.wav">
       <Name>collisionAudio</Name>
@@ -247,11 +200,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="Help_bak.bmp">
-      <Name>Help_bak</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="playAudio.wav">
       <Name>playAudio</Name>
       <Importer>WavImporter</Importer>
@@ -261,11 +209,6 @@
       <Name>Scene2Audio</Name>
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
-    </Compile>
-    <Compile Include="Thanks_bak.png">
-      <Name>Thanks_bak</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
     </Compile>
     <Compile Include="victory.wav">
       <Name>victory</Name>
