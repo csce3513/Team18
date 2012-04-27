@@ -12,13 +12,14 @@ namespace WindowsGame1
     class EnemyCharacter : AnimatedSprite
     {
         const string CHARACTER_ASSETNAME = "Enemy1_SpriteSheet";
-        static float START_POSITION_X = 600;
-        static float START_POSITION_Y = 250;
         const int CHARACTER_SPEED = 100;
         const int MOVE_UP = -1;
         const int MOVE_DOWN = 1;
         const int MOVE_LEFT = -1;
         const int MOVE_RIGHT = 1;
+        float START_POSITION_X;
+        float START_POSITION_Y;
+        
         Vector2 TargetPos = new Vector2(-999, -999);
         Vector2 LastPosition1;
         Vector2 LastPosition2;
@@ -31,6 +32,7 @@ namespace WindowsGame1
         {
             Walking, Chasing, Stationary
         }
+
 
         State mCurrentState = State.Walking;
 

@@ -105,7 +105,7 @@ namespace WindowsGame1
                     //Obtain difference from the first Post, then move close to there
                     else if (mCurrentState != State.Stationary)
                     {
-                        //Need some modification +2 or +1 to avoid strange movement
+                        //Need some modification +2 or +1 to avoid moving back and forward in short time
                         if (pos.X > START_POSITION_X+2)
                         {
                             currentRow = 1;

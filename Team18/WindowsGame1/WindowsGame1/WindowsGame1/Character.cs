@@ -76,6 +76,8 @@ namespace WindowsGame1
                 mSpeed = Vector2.Zero;
                 mDirection = Vector2.Zero;
 
+                currentRow = 1;
+
                 if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
                 {
                     currentRow = 3;
@@ -101,12 +103,14 @@ namespace WindowsGame1
                     mSpeed.Y = CHARACTER_SPEED;
                     mDirection.Y = MOVE_DOWN;
                 }
-                if (aCurrentKeyboardState.IsKeyDown(Keys.RightShift) == true)
-                {
-                    currentRow = 4;
-                  //  mSpeed.Y = CHARACTER_SPEED;
-                  //  mDirection.Y = MOVE_UP;
-                }
+                
+            }
+
+            if (characterStatus == 4)
+            {
+                mSpeed = Vector2.Zero;
+                mDirection = Vector2.Zero;
+                currentRow = 4;
             }
         }
 

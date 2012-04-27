@@ -6,11 +6,14 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
+
 
 namespace WindowsGame1
 {
 
-    //ActionHandler handles collision and some action related to objects
+    //ActionHandler Detects Collision and Check Visivility of Enemy
 
     class ActionHandler
     {
@@ -36,6 +39,8 @@ namespace WindowsGame1
 
         //BoundaryDetection
         bool Boundary;
+
+        
 
         //Default Constructor
         public ActionHandler()
@@ -107,7 +112,7 @@ namespace WindowsGame1
             int SubjectNum = FindSprite(ID);
 
             for (int i = 0; i < size; i++)
-                if (i != SubjectNum && InGame[i])
+                if (i != SubjectNum && InGame[i] && 202 != ID)
                 {
                     if (status.X != 0 && status.Y != 0)
                         return status;
@@ -276,6 +281,17 @@ namespace WindowsGame1
             Vector2 Position1 = posList[n];
             Vector2 Position2 = posList[m];
 
+            //Modify the Position Left-top to center of sprite
+            Position1.X += WidthList[n] / 2;
+            Position1.Y += HeightList[n] / 2;
+            Position2.X += WidthList[m] / 2;
+            Position2.Y += HeightList[m] / 2;
+
+            //ID 202 is Dragon that can fly and see the player from sky
+            //ID 1 is Princess that has to be helped by player
+            if (ID1 == 202 || ID1 == 1)
+                return Position2;
+
             //Find Rectangle
             //Right and left sides
             if (Position1.X < Position2.X)
@@ -320,7 +336,7 @@ namespace WindowsGame1
             //check if there is any object between object1 and 2
             for (int i = 0; i < size; i++)
                 //only obstacles considered
-                if (i != n && i != m)
+                if (i != n && i != m && InGame[i])
                 {
                     //line is not nearly vertical
                     if (!(right+1 <= left && right-1 >=left))
@@ -353,6 +369,8 @@ namespace WindowsGame1
 
             return Position2;
         }
+
+
 
     }
 }

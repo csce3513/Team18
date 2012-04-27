@@ -45,15 +45,38 @@ namespace WindowsGame1
         Sprite tree1;
         Sprite tree2;
         Sprite tree3;
+        Sprite tree4;
+        Sprite tree5;
         Sprite Arrow;
         
         EnemyCharacter Enemy1;
-        Dragon Enemy2;
+        EnemyCharacter Enemy2;
+        Dragon Dragon1;
         
         PrincessZelda Zelda;               
         Character player;
 
-        ActionHandler Action;
+        Collision Action;
+
+        //audio variables declaration
+        SoundEffect song0;
+        SoundEffectInstance song0Inst;
+        SoundEffect song1;
+        SoundEffectInstance song1Inst;
+        SoundEffect song2;
+        SoundEffectInstance song2Inst;
+        SoundEffect song3;
+        SoundEffectInstance song3Inst;
+        SoundEffect song4;
+        SoundEffectInstance song4Inst;
+        SoundEffect song5;
+        SoundEffectInstance song5Inst;
+        SoundEffect song6;
+        SoundEffectInstance song6Inst;
+        SoundEffect song7;
+        SoundEffectInstance song7Inst;
+        SoundEffect song8;
+        SoundEffectInstance song8Inst;
 
         public Game1()
         {
@@ -86,8 +109,10 @@ namespace WindowsGame1
             //ID number 2xx indicate Enemy
             Enemy1 = new EnemyCharacter();
             Enemy1.SpriteID = 201;
-            Enemy2 = new Dragon();
-            Enemy2.SpriteID = 202;
+            Dragon1 = new Dragon();
+            Dragon1.SpriteID = 202;
+            Enemy2 = new EnemyCharacter();
+            Enemy2.SpriteID = 203;
 
             //ID number 1 indicate PrincessZelda
             Zelda = new PrincessZelda();
@@ -107,12 +132,14 @@ namespace WindowsGame1
             tree1 = new Sprite(101);
             tree2 = new Sprite(102);
             tree3 = new Sprite(103);
+            tree4 = new Sprite(104);
+            tree5 = new Sprite(105);
 
             //ID 5xx indicate Key acition abject that cause some action
             Arrow = new Sprite(501);
 
             //Action Handling including Collision Detection and EnemySight
-            Action = new ActionHandler();
+            Action = new Collision();
 
 
             base.Initialize();
@@ -146,6 +173,8 @@ namespace WindowsGame1
             tree1.LoadContent(this.Content, "Tree");
             tree2.LoadContent(this.Content, "Tree");
             tree3.LoadContent(this.Content, "Tree");
+            tree4.LoadContent(this.Content, "Tree");
+            tree5.LoadContent(this.Content, "Tree");
 
             //Action Obstacle
             Arrow.LoadContent(this.Content, "Arrow");
@@ -162,27 +191,50 @@ namespace WindowsGame1
             player.Scale = 1.5f;
 
             Enemy1.LoadContent(this.Content);           
-            Enemy2.LoadContent(this.Content);
+            Dragon1.LoadContent(this.Content);
+            Enemy2.LoadContent(this.Content);  
 
             Zelda.LoadContent(this.Content);
             Zelda.Scale = 1.5f;
 
             //Add object information to ActionHandler
-            Action.addObject(player.pos, player.SpriteID, 30 * 1.5f - 15, 26 * 1.5f - 8);
-            Action.addObject(tree1.pos, tree1.SpriteID, tree1.getTex().Width * 0.8f, tree1.getTex().Height * 0.8f);
-            Action.addObject(tree2.pos, tree2.SpriteID, tree2.getTex().Width * 0.8f, tree2.getTex().Height * 0.8f);
-            Action.addObject(tree3.pos, tree3.SpriteID, tree3.getTex().Width * 0.8f, tree3.getTex().Height * 0.8f);
+            Action.addObject(player.pos, player.SpriteID, 30 * 1.5f - 20, 26 * 1.5f - 8);
+            Action.addObject(tree1.pos, tree1.SpriteID, tree1.getTex().Width * 0.7f, tree1.getTex().Height * 0.7f);
+            Action.addObject(tree2.pos, tree2.SpriteID, tree2.getTex().Width * 0.7f, tree2.getTex().Height * 0.7f);
+            Action.addObject(tree3.pos, tree3.SpriteID, tree3.getTex().Width * 0.7f, tree3.getTex().Height * 0.7f);
+            Action.addObject(tree4.pos, tree4.SpriteID, tree4.getTex().Width * 0.7f, tree4.getTex().Height * 0.7f);
+            Action.addObject(tree5.pos, tree5.SpriteID, tree5.getTex().Width * 0.7f, tree5.getTex().Height * 0.7f);
             Action.addObject(Enemy1.pos, Enemy1.SpriteID, 48, 38);
-            Action.addObject(Enemy2.pos, Enemy2.SpriteID, 45, 80);
+            Action.addObject(Enemy2.pos, Enemy2.SpriteID, 48, 38);            
+            Action.addObject(Dragon1.pos, Dragon1.SpriteID, 45, 85);
             Action.addObject(Zelda.pos, Zelda.SpriteID, Zelda.getTex().Width * 1.5f, Zelda.getTex().Height * 1.5f);
-            Action.addObject(new Vector2(775, 250), Arrow.SpriteID, Arrow.getTex().Width, Arrow.getTex().Height); 
-                        
+            Action.addObject(new Vector2(775, 250), Arrow.SpriteID, Arrow.getTex().Width, Arrow.getTex().Height);
 
+            //Load Animation Spritesheet
             player.Animation(Content, "Player_SpriteSheet", 30, 26, 10);
-            Enemy2.Animation(Content, "finalflyingdragon", 96, 96, 4);
+            Dragon1.Animation(Content, "finalflyingdragon", 96, 96, 4);
             Enemy1.Animation(Content, "Enemy1_SpriteSheet", 50, 40, 3);
+            Enemy2.Animation(Content, "Enemy1_SpriteSheet", 50, 40, 3);
 
-
+            //add audios 
+            song0 = Content.Load<SoundEffect>("audioHome");  // menu Audio
+            song0Inst = song0.CreateInstance();
+            song1 = Content.Load<SoundEffect>("collisionAudio"); //audio for character hit by obstacle
+            song1Inst = song1.CreateInstance();
+            song2 = Content.Load<SoundEffect>("Condolescences"); //when game lost
+            song2Inst = song2.CreateInstance();
+            song3 = Content.Load<SoundEffect>("Victory");//when game won
+            song3Inst = song3.CreateInstance();
+            song4 = Content.Load<SoundEffect>("playAudio");  //"in-game" audio
+            song4Inst = song4.CreateInstance();
+            song5 = Content.Load<SoundEffect>("Scene2Audio");
+            song5Inst = song5.CreateInstance();
+            song6 = Content.Load<SoundEffect>("CollisionRight");
+            song6Inst = song6.CreateInstance();
+            song7 = Content.Load<SoundEffect>("CollisionLeft");
+            song7Inst = song7.CreateInstance();
+            song8 = Content.Load<SoundEffect>("DyingAudio");
+            song8Inst = song8.CreateInstance();
 
 
             // TODO: use this.Content to load your game content here
@@ -211,6 +263,15 @@ namespace WindowsGame1
             //At Menu screen
             if (state == gamestate.menu)
             {
+                //play "in-game" audio
+                song0Inst.Volume = 0.5f;
+                song0Inst.Play();
+                song4Inst.Stop();
+                song1Inst.Stop();
+                song2Inst.Stop();
+                song5Inst.Stop();
+                song3Inst.Stop();
+
                 // Allows the game to exit
                 if ((keystate.IsKeyDown(Keys.Escape) == true)
                     && (lastKeyState.IsKeyUp(Keys.Escape) == true))
@@ -228,24 +289,8 @@ namespace WindowsGame1
                     //Healthy. Default state of player
                     Action.CharaceterState = 1;
 
-                    //Set Position for Each objects
-                    tree1.updatePos(new Vector2(200, 200));
-                    tree2.updatePos(new Vector2(600, 300));
-                    tree3.updatePos(new Vector2(500, 100)); 
-                    Enemy1.FirstPos = new Vector2(600, 250);
-                    player.updatePos(new Vector2(50, 300));
-
-                    //ActionHandler needs to know updated position
-                    Action.UpdatePos(player.SpriteID, player.pos);
-                    Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
-                    Action.UpdatePos(tree1.SpriteID, tree1.pos);
-                    Action.UpdatePos(tree2.SpriteID, tree2.pos);
-                    Action.UpdatePos(tree3.SpriteID, tree3.pos);
-
-
-                    //Ignore objects that is not on the map for CollisionDetect
-                    Action.IgnoreObject(202);
-                    Action.IgnoreObject(1);
+                    //StartMap Load
+                    StartMap_Load();
                 }
 
                 //get player to help menu
@@ -256,8 +301,7 @@ namespace WindowsGame1
                 }
             }
 
-
-                // allow player to quit help screen
+            // allow player to quit help screen
             else if (state == gamestate.help)
             {
                 if ((keystate.IsKeyDown(Keys.Escape) == true)
@@ -265,12 +309,11 @@ namespace WindowsGame1
                     state = gamestate.menu;
 
             }
+
             //At playing screen    
             else if (state == gamestate.play)
             {
-                Vector2 currentPos;
-                Vector2 Diff = new Vector2(0, 0);
-
+                
                 // GO to Menu state
                 if ((keystate.IsKeyDown(Keys.Escape) == true)
                     && (lastKeyState.IsKeyUp(Keys.Escape) == true))
@@ -280,79 +323,22 @@ namespace WindowsGame1
                 //Enemy and Player action has to be called here
                 if (MapState == gamemap.start)
                 {
-                    //Checks if the enemy can see the player, return -999.-999 or player.pos
-                    Enemy1.TargetPosition = Action.Visibility(Enemy1.SpriteID, player.SpriteID);
+                    song0Inst.Pause();
+                    song4Inst.Volume = 0.7f;
+                    song4Inst.Play();
 
-                    //Player and Enemy movement
-                    player.CharacterUpdate(gameTime);
-                    player.HandleSourceRect(gameTime);
-                    Enemy1.EnemyUpdate(gameTime);
-                    Enemy1.HandleSourceRect(gameTime);
-
-                    //ActionHandler needs to know updated position
-                    Action.UpdatePos(player.SpriteID, player.pos);
-                    Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
-
-                    //Collision detection, moving back to non-collide position                    
-                    Diff = Action.CollisionCheck(player.SpriteID);
-
-                    //In collision check, also checked Lose and Win status
-                    player.status = Action.CharaceterState; 
-
-                    //Collide against a object on X axis
-                    if (Math.Abs(Diff.X) > 0)
-                    {
-                        currentPos = player.pos;
-                        currentPos.X -= Diff.X;
-                        player.pos = currentPos;
-                    }
-                    //Collide against object on Y axis
-                    if (Math.Abs(Diff.Y) > 0)
-                    {
-                        currentPos = player.pos;
-                        currentPos.Y -= Diff.Y;
-                        player.pos = currentPos;
-                    }
-
-                    //Same as character, collision detection.
-                    Diff = Action.CollisionCheck(Enemy1.SpriteID);
-
-                    if (Math.Abs(Diff.X) > 0)
-                    {
-                        currentPos = Enemy1.pos;
-                        currentPos.X -= Diff.X;
-                        Enemy1.pos = currentPos;
-                    }
-                    if (Math.Abs(Diff.Y) > 0)
-                    {
-                        currentPos = Enemy1.pos;
-                        currentPos.Y -= Diff.Y;
-                        Enemy1.pos = currentPos;
-                    }
+                    //StartMap Update
+                    StartMap_Update(gameTime);
+                   
                     //This means Move to Next map
                     //Replace Objects for the New Map
                     if (Action.CharaceterState == 2)
                     {
                         MapState = gamemap.second;
-                        //Recognize objects that is not on the map from CollisionDetect
-                        Action.RecognizeObject(202);
-                        Action.RecognizeObject(1);
 
-                        //Setup new Position
-                        tree1.updatePos(new Vector2(50, 150));
-                        tree2.updatePos(new Vector2(500, 200));
-                        tree3.updatePos(new Vector2(200, 100));
-                        Enemy1.FirstPos = new Vector2(700,150);
-                        Enemy2.updatePos(new Vector2(650, 350));
-                        player.updatePos(new Vector2(50, 300));
-
-                        //ActionHandler needs to know updated position
-                        Action.UpdatePos(player.SpriteID, player.pos);
-                        Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
-                        Action.UpdatePos(Enemy2.SpriteID, Enemy2.pos);
-                        Action.UpdatePos(tree1.SpriteID, tree1.pos);
-                        Action.UpdatePos(tree2.SpriteID, tree2.pos);
-                        Action.UpdatePos(tree3.SpriteID, tree3.pos);
+                        //SecondMap Loading
+                        SecondMap_Load();
+                        
                     }
                     //Win save the Princess
                     else if (Action.CharaceterState == 3)
@@ -366,81 +352,48 @@ namespace WindowsGame1
                 //Second Map basically same as First except Enamy2 added here
                 else if (MapState == gamemap.second)
                 {
+                    song5Inst.Volume = 0.5f;
+                    song5Inst.Play();
+                    song4Inst.Stop();
+                    song0Inst.Stop();
 
-                    //Checks if the enemy can see the player, return -999.-999 or player.pos
-                    Enemy1.TargetPosition = Action.Visibility(Enemy1.SpriteID, player.SpriteID);
-                    Enemy2.TargetPosition = Action.Visibility(Enemy2.SpriteID, player.SpriteID);
+                    //Default state of Character
+                    Action.CharaceterState = 1;
 
-                    //Player and Enemy movement
-                    player.CharacterUpdate(gameTime);                    
-                    Enemy1.EnemyUpdate(gameTime);
-                    Enemy2.EnemyUpdate(gameTime);
+                    //Second Map Update
+                    SecondMap_Update(gameTime);
 
-                    //Player and Enemy Animation Rectangle Handle
-                    player.HandleSourceRect(gameTime);
-                    Enemy1.HandleSourceRect(gameTime);                    
-                    Enemy2.HandleSourceRect(gameTime);
-
-                    //ActionHandler needs to know updated position
-                    Action.UpdatePos(player.SpriteID, player.pos);
-                    Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
-                    Action.UpdatePos(Enemy2.SpriteID, Enemy2.pos);
-
-                    //Collision detection, moving back to non-collide position
-                    Diff = Action.CollisionCheck(player.SpriteID);
-
-                    //Collide against a object on X axis
-                    if (Math.Abs(Diff.X) > 0)
-                    {
-                        currentPos = player.pos;
-                        currentPos.X -= Diff.X;
-                        player.pos = currentPos;
-                    }
-                    //Collide against object on Y axis
-                    if (Math.Abs(Diff.Y) > 0)
-                    {
-                        currentPos = player.pos;
-                        currentPos.Y -= Diff.Y;
-                        player.pos = currentPos;
-                    }
-
-                    //Same as character, collision detection.
-                    Diff = Action.CollisionCheck(Enemy1.SpriteID);
-
-                    if (Math.Abs(Diff.X) > 0)
-                    {
-                        currentPos = Enemy1.pos;
-                        currentPos.X -= Diff.X;
-                        Enemy1.pos = currentPos;
-                    }
-                    if (Math.Abs(Diff.Y) > 0)
-                    {
-                        currentPos = Enemy1.pos;
-                        currentPos.Y -= Diff.Y;
-                        Enemy1.pos = currentPos;
-                    }
-
-                    //Same as character, collision detection.
-                    Diff = Action.CollisionCheck(Enemy2.SpriteID);
-
-                    if (Math.Abs(Diff.X) > 0)
-                    {
-                        currentPos = Enemy2.pos;
-                        currentPos.X -= Diff.X;
-                        Enemy2.pos = currentPos;
-                    }
-                    if (Math.Abs(Diff.Y) > 0)
-                    {
-                        currentPos = Enemy2.pos;
-                        currentPos.Y -= Diff.Y;
-                        Enemy2.pos = currentPos;
-                    }
 
                     if (Action.CharaceterState == 3)
                         MapState = gamemap.win;
                     else if (Action.CharaceterState == 4)
                         MapState = gamemap.lose;
-                }               
+                    else if (Action.CharaceterState == 2)
+                    {
+                        MapState = gamemap.final;
+                        //Final Map loading
+                        FinalMap_Load();
+                    }
+                }
+                else if (MapState == gamemap.final)
+                {
+                    //Default state of Character
+                    Action.CharaceterState = 1;
+
+                    //Second Map Update
+                    FinalMap_Update(gameTime);
+                    
+
+                    if (Action.CharaceterState == 3)
+                        MapState = gamemap.win;
+                    else if (Action.CharaceterState == 4)
+                        MapState = gamemap.lose;
+                }
+                else if (MapState == gamemap.lose)
+                {
+                    player.CharacterUpdate(gameTime);
+                    player.HandleSourceRect(gameTime);
+                }
 
             }
 
@@ -490,8 +443,22 @@ namespace WindowsGame1
                     tree1.Draw(this.spriteBatch);
                     tree2.Draw(this.spriteBatch);
                     tree3.Draw(this.spriteBatch);
+                    Arrow.Draw(this.spriteBatch);
                     Enemy1.animateDraw(this.spriteBatch);
                     Enemy2.animateDraw(this.spriteBatch);
+                    player.animateDraw(this.spriteBatch);
+                }
+                //Drawing final map
+                else if (MapState == gamemap.final)
+                {
+                    //Drawing Backgrounds and objects that are on the Map
+                    BG0.Draw(this.spriteBatch);
+                    tree1.Draw(this.spriteBatch);
+                    tree2.Draw(this.spriteBatch);
+                    tree3.Draw(this.spriteBatch);
+                    Enemy1.animateDraw(this.spriteBatch);
+                    Enemy2.animateDraw(this.spriteBatch);
+                    Dragon1.animateDraw(this.spriteBatch);
                     Zelda.Draw(this.spriteBatch);
                     player.animateDraw(this.spriteBatch);
                 }
@@ -515,6 +482,194 @@ namespace WindowsGame1
             base.Draw(gameTime);
         }
 
+
+        //Objects in Start map are placed
+        private void StartMap_Load()
+        {
+            //Set Position for Each objects
+            tree1.updatePos(new Vector2(200, 200));
+            tree2.updatePos(new Vector2(600, 300));
+            tree3.updatePos(new Vector2(500, 100));
+            Enemy1.FirstPos = new Vector2(600, 250);
+            player.updatePos(new Vector2(10, 220));
+
+            //ActionHandler needs to know updated position
+            Action.UpdatePos(player.SpriteID, player.pos);
+            Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
+            Action.UpdatePos(tree1.SpriteID, tree1.pos);
+            Action.UpdatePos(tree2.SpriteID, tree2.pos);
+            Action.UpdatePos(tree3.SpriteID, tree3.pos);
+
+
+            //Ignore objects that is not on the map for CollisionDetect
+            Action.IgnoreObject(Dragon1.SpriteID);
+            Action.IgnoreObject(Zelda.SpriteID);
+            Action.IgnoreObject(Enemy2.SpriteID);
+            Action.IgnoreObject(tree4.SpriteID);
+            Action.IgnoreObject(tree5.SpriteID);
+        }
+
+        private void SecondMap_Load()
+        {
+            //Setup new Position
+            tree1.updatePos(new Vector2(50, 150));
+            tree2.updatePos(new Vector2(500, 200));
+            tree3.updatePos(new Vector2(200, 100));
+            player.updatePos(new Vector2(50, 300));
+
+            //For enemy, change first position where they move back if they lost player
+            Enemy1.FirstPos = new Vector2(700, 150);
+
+            //newly added
+            Enemy2.FirstPos = new Vector2(650, 350);
+
+            //ActionHandler needs to know updated position
+            Action.UpdatePos(player.SpriteID, player.pos);
+            Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
+            Action.UpdatePos(tree1.SpriteID, tree1.pos);
+            Action.UpdatePos(tree2.SpriteID, tree2.pos);
+            Action.UpdatePos(tree3.SpriteID, tree3.pos);
+
+            //newly added
+            Action.UpdatePos(Enemy2.SpriteID, Enemy2.pos);
+
+            //Recognize objects that is not on the map from CollisionDetect
+            //Dragon and Zelda added
+            Action.RecognizeObject(Enemy2.SpriteID);
+           
+        }
+
+        private void FinalMap_Load()
+        {             
+            //Setup new Position
+            tree1.updatePos(new Vector2(300, 150));
+            tree2.updatePos(new Vector2(200, 200));
+            tree3.updatePos(new Vector2(500, 400));
+            player.updatePos(new Vector2(50, 300));
+
+            //For enemy, change first position where they move back if they lost player
+            Enemy1.FirstPos = new Vector2(700, 150);
+            Enemy2.FirstPos = new Vector2(650, 100);
+
+            //newly added
+            Dragon1.updatePos(new Vector2(-150, -50));
+
+            //ActionHandler needs to know updated position
+            Action.UpdatePos(player.SpriteID, player.pos);
+            Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
+            Action.UpdatePos(Enemy2.SpriteID, Enemy2.pos);
+            Action.UpdatePos(tree1.SpriteID, tree1.pos);
+            Action.UpdatePos(tree2.SpriteID, tree2.pos);
+            Action.UpdatePos(tree3.SpriteID, tree3.pos);
+
+            //newly added
+            Action.UpdatePos(Dragon1.SpriteID, Dragon1.pos);
+
+            //Recognize objects that is not on the map from CollisionDetect
+            //Dragon and Zelda added
+            Action.RecognizeObject(Dragon1.SpriteID);
+            Action.RecognizeObject(Zelda.SpriteID);
+        }
+
+
+
+        //This will handle collision and animation on StartMap
+        private void StartMap_Update(GameTime gameTime)
+        {
+            //Checks if the enemy can see the player, return -999.-999 or player.pos
+            Enemy1.TargetPosition = Action.Visibility(Enemy1.SpriteID, player.SpriteID);
+
+            //Player and Enemy movement
+            player.CharacterUpdate(gameTime);
+            Enemy1.EnemyUpdate(gameTime);
+
+            //Player and Enemy HandleSorceRectangle
+            player.HandleSourceRect(gameTime);
+            Enemy1.HandleSourceRect(gameTime);
+
+            //ActionHandler needs to know updated position
+            Action.UpdatePos(player.SpriteID, player.pos);
+            Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
+
+            //Collision detection, moving back to non-collide position
+            Action.SpriteCollision(ref player, song6Inst, song7Inst);
+            Action.SpriteCollision(ref Enemy1);
+
+            //In collision check, also checked Lose and Win status
+            player.status = Action.CharaceterState;
+
+        }
+
+        private void SecondMap_Update(GameTime gameTime)
+        {
+
+            //Checks if the enemy can see the player, return -999.-999 or player.pos
+            Enemy1.TargetPosition = Action.Visibility(Enemy1.SpriteID, player.SpriteID);
+            Enemy2.TargetPosition = Action.Visibility(Enemy2.SpriteID, player.SpriteID);
+
+            //Player and Enemy movement
+            player.CharacterUpdate(gameTime);
+            Enemy1.EnemyUpdate(gameTime);
+            Enemy2.EnemyUpdate(gameTime);
+
+            //Player and Enemy Animation Rectangle Handle
+            player.HandleSourceRect(gameTime);
+            Enemy1.HandleSourceRect(gameTime);
+            Enemy2.HandleSourceRect(gameTime);
+
+            //ActionHandler needs to know updated position
+            Action.UpdatePos(player.SpriteID, player.pos);
+            Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
+            Action.UpdatePos(Enemy2.SpriteID, Enemy2.pos);
+           
+            //Collision detection, moving back to non-collide position
+            Action.SpriteCollision(ref player, song6Inst, song7Inst);
+            Action.SpriteCollision(ref Enemy1);
+            Action.SpriteCollision(ref Enemy2);
+
+            //In collision check, also checked Lose and Win status
+            player.status = Action.CharaceterState;
+
+        }
+
+
+        private void FinalMap_Update(GameTime gameTime)
+        {
+            //Checks if the enemy can see the player, return -999.-999 or player.pos
+            Enemy1.TargetPosition = Action.Visibility(Enemy1.SpriteID, player.SpriteID);
+            Dragon1.TargetPosition = Action.Visibility(Dragon1.SpriteID, player.SpriteID);
+            Enemy2.TargetPosition = Action.Visibility(Enemy2.SpriteID, player.SpriteID);
+
+            //Player and Enemy movement
+            player.CharacterUpdate(gameTime);
+            Enemy1.EnemyUpdate(gameTime);
+            Dragon1.EnemyUpdate(gameTime);
+            Enemy2.EnemyUpdate(gameTime);
+
+            //Player and Enemy Animation Rectangle Handle
+            player.HandleSourceRect(gameTime);
+            Enemy1.HandleSourceRect(gameTime);
+            Dragon1.HandleSourceRect(gameTime);
+            Enemy2.HandleSourceRect(gameTime);
+
+            //ActionHandler needs to know updated position
+            Action.UpdatePos(player.SpriteID, player.pos);
+            Action.UpdatePos(Enemy1.SpriteID, Enemy1.pos);
+            Action.UpdatePos(Dragon1.SpriteID, Dragon1.pos);
+            Action.UpdatePos(Enemy2.SpriteID, Enemy2.pos);
+
+            //Collision detection, moving back to non-collide position
+            Action.SpriteCollision(ref player, song6Inst, song7Inst);
+            Action.SpriteCollision(ref Enemy1);
+            Action.SpriteCollision(ref Enemy2);
+            Action.SpriteCollision(ref Dragon1);
+
+            //In collision check, also checked Lose and Win status
+            player.status = Action.CharaceterState;
+        }
+
+
+        
 
     }
 }
