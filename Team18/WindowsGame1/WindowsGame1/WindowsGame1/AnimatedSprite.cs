@@ -107,10 +107,21 @@ namespace WindowsGame1
             {
                 sourceRect = new Rectangle(currentFrame * frameWidth, frameHeight * currentRow, frameWidth, frameHeight);
                 origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
-
+              
+                   // currentFrame = 5;
+                   
+                
+               
+            }
+            
+            if (currentRow == 5)
+            {
+                sourceRect = new Rectangle(currentFrame * frameWidth, frameHeight * currentRow, frameWidth, frameHeight);
+                origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
+                
             }
         //base.Update(gameTime);
-           base.Update(gameTime, mSpeed, mDirection);
+        //   base.Update(gameTime, mSpeed, mDirection);
         }
 
         public void animateDraw(SpriteBatch theSpriteBatch)

@@ -2,15 +2,9 @@ Content\test.xnb
 Content\road01_a.xnb
 Content\road01_b.xnb
 Content\road02_a.xnb
-Content\Terrain_Grass01_SR.xnb
-Content\Terrain_Grass02_SR.xnb
-Content\Forest 01a.xnb
-Content\Grass _amp_ Pebbles _32x32_.xnb
-Content\menu.xnb
 Content\Grass.xnb
 Content\Tree.xnb
 Content\Enemy.xnb
-Content\Help.xnb
 Content\menu1.xnb
 Content\Player_SpriteSheet.xnb
 Content\Zelda.xnb
@@ -21,3 +15,18 @@ Content\Thanks.xnb
 Content\finalflyingdragon.xnb
 Content\Player.xnb
 Content\Enemy1_SpriteSheet.xnb
+Content\ArrowSheet.xnb
+Content\Emeny1_SpriteSheet.xnb
+Content\Help.xnb
+Content\Zelda1.xnb
+Content\audioHome.xnb
+Content\collisionAudio.xnb
+Content\CollisionLeft.xnb
+Content\CollisionRight.xnb
+Content\Condolescences.xnb
+Content\dragon.xnb
+Content\DyingAudio.xnb
+Content\Goal1.xnb
+Content\playAudio.xnb
+Content\Scene2Audio.xnb
+Content\victory.xnb

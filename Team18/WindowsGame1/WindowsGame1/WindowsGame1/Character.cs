@@ -108,9 +108,17 @@ namespace WindowsGame1
 
             if (characterStatus == 4)
             {
-                mSpeed = Vector2.Zero;
-                mDirection = Vector2.Zero;
-                currentRow = 4;
+               
+                    currentRow = 4;
+                    mSpeed = Vector2.Zero;
+                    mDirection = Vector2.Zero;
+                    
+                
+            }
+            if (aCurrentKeyboardState.IsKeyDown(Keys.M) == true)
+            {
+                currentRow = 5;
+              
             }
         }
 

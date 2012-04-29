@@ -134,3 +134,83 @@ C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\W
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\test.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Tree.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu1.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player_SpriteSheet.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Zelda.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Arrow.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Wall1.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Blood.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Thanks.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\finalflyingdragon.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy1_SpriteSheet.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArrowSheet.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Emeny1_SpriteSheet.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Help.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\audioHome.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\collisionAudio.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\CollisionLeft.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\CollisionRight.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Condolescences.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\dragon.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\DyingAudio.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Goal1.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\playAudio.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Scene2Audio.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\victory.xnb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.pdb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.xml
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Daniel\Team18\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Zelda1.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\test.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_a.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road01_b.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\road02_a.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Grass.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Tree.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\menu1.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player_SpriteSheet.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Zelda.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Arrow.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Wall1.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Blood.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Thanks.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\finalflyingdragon.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy1_SpriteSheet.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArrowSheet.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Emeny1_SpriteSheet.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Help.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Zelda1.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\audioHome.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\collisionAudio.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\CollisionLeft.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\CollisionRight.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Condolescences.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\dragon.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\DyingAudio.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Goal1.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\playAudio.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Scene2Audio.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\victory.xnb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.pdb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Moq.xml
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb

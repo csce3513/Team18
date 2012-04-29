@@ -11,7 +11,7 @@ namespace WindowsGame1
 {
     class PrincessZelda : AnimatedSprite
     {
-        const string CHARACTER_ASSETNAME = "Zelda";
+        const string CHARACTER_ASSETNAME = "Zelda1";
         const int START_POSITION_X = 700;
         const int START_POSITION_Y = 300;
         const int CHARACTER_SPEED = 100;
@@ -74,6 +74,7 @@ namespace WindowsGame1
         //Enemy AI function included
         private void UpdateMovement()
         {
+            currentRow = 1;
 
             mSpeed = Vector2.Zero;
             mDirection = Vector2.Zero;
@@ -95,7 +96,7 @@ namespace WindowsGame1
                     mSpeed = new Vector2(CHARACTER_SPEED, CHARACTER_SPEED);
                     mDirection = StuckedDecision;
                 }
-
+ 
                 //Indicating got out from stuck, change state to walking
                 if (LastPosition1 == pos && LastDecision != Vector2.Zero)
                     mCurrentState = State.Walking;
@@ -104,6 +105,7 @@ namespace WindowsGame1
                 {
                     if (pos.X > TargetPos.X + 2)
                     {
+                       // currentRow = 1;
                         mSpeed.X = CHARACTER_SPEED;
                         mDirection.X = MOVE_LEFT;
                     }

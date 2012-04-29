@@ -215,6 +215,7 @@ namespace WindowsGame1
             Dragon1.Animation(Content, "finalflyingdragon", 96, 96, 4);
             Enemy1.Animation(Content, "Enemy1_SpriteSheet", 50, 40, 3);
             Enemy2.Animation(Content, "Enemy1_SpriteSheet", 50, 40, 3);
+            Zelda.Animation(Content, "Zelda1", 29, 27, 4 );
 
             //add audios 
             song0 = Content.Load<SoundEffect>("audioHome");  // menu Audio
@@ -459,7 +460,7 @@ namespace WindowsGame1
                     Enemy1.animateDraw(this.spriteBatch);
                     Enemy2.animateDraw(this.spriteBatch);
                     Dragon1.animateDraw(this.spriteBatch);
-                    Zelda.Draw(this.spriteBatch);
+                    Zelda.animateDraw(this.spriteBatch);
                     player.animateDraw(this.spriteBatch);
                 }
                 //showing LOSE background
@@ -616,6 +617,7 @@ namespace WindowsGame1
             player.HandleSourceRect(gameTime);
             Enemy1.HandleSourceRect(gameTime);
             Enemy2.HandleSourceRect(gameTime);
+           // Zelda.HandleSourceRect(gameTime);
 
             //ActionHandler needs to know updated position
             Action.UpdatePos(player.SpriteID, player.pos);
@@ -651,6 +653,7 @@ namespace WindowsGame1
             Enemy1.HandleSourceRect(gameTime);
             Dragon1.HandleSourceRect(gameTime);
             Enemy2.HandleSourceRect(gameTime);
+            Zelda.HandleSourceRect(gameTime);
 
             //ActionHandler needs to know updated position
             Action.UpdatePos(player.SpriteID, player.pos);
