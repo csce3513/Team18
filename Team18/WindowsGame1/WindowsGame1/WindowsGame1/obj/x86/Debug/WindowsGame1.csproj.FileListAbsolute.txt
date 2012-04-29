@@ -190,9 +190,7 @@ C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Thanks.xnb
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\finalflyingdragon.xnb
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player.xnb
-C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy1_SpriteSheet.xnb
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArrowSheet.xnb
-C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Emeny1_SpriteSheet.xnb
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Help.xnb
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Zelda1.xnb
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\audioHome.xnb
@@ -214,3 +212,4 @@ C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
 C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
+C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy1_SpriteSheet.xnb

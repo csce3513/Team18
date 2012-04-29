@@ -138,13 +138,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enemy1_SpriteSheet.png">
-      <Name>Enemy1_SpriteSheet</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="ArrowSheet.png">
       <Name>ArrowSheet</Name>
       <Importer>TextureImporter</Importer>
@@ -185,11 +178,6 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
     </Compile>
-    <Compile Include="Emeny1_SpriteSheet.png">
-      <Name>Emeny1_SpriteSheet</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="Goal1.wav">
       <Name>Goal1</Name>
       <Importer>WavImporter</Importer>
@@ -219,6 +207,13 @@
   <ItemGroup>
     <Compile Include="Zelda1.png">
       <Name>Zelda1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enemy1_SpriteSheet.png">
+      <Name>Enemy1_SpriteSheet</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

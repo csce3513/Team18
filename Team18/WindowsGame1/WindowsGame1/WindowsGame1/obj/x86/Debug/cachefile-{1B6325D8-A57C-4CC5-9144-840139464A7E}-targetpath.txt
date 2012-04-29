@@ -14,9 +14,7 @@ Content\Blood.xnb
 Content\Thanks.xnb
 Content\finalflyingdragon.xnb
 Content\Player.xnb
-Content\Enemy1_SpriteSheet.xnb
 Content\ArrowSheet.xnb
-Content\Emeny1_SpriteSheet.xnb
 Content\Help.xnb
 Content\Zelda1.xnb
 Content\audioHome.xnb
@@ -30,3 +28,4 @@ Content\Goal1.xnb
 Content\playAudio.xnb
 Content\Scene2Audio.xnb
 Content\victory.xnb
+Content\Enemy1_SpriteSheet.xnb

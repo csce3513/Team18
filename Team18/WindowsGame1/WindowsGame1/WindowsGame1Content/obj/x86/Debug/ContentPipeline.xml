@@ -146,15 +146,6 @@
       <Time>2012-04-28T20:26:59.4762455-05:00</Time>
     </Item>
     <Item>
-      <Source>Enemy1_SpriteSheet.png</Source>
-      <Name>Enemy1_SpriteSheet</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy1_SpriteSheet.xnb</Output>
-      <Time>2012-04-27T22:04:43.356653-05:00</Time>
-    </Item>
-    <Item>
       <Source>ArrowSheet.png</Source>
       <Name>ArrowSheet</Name>
       <Importer>TextureImporter</Importer>
@@ -162,15 +153,6 @@
       <Options>None</Options>
       <Output>C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\ArrowSheet.xnb</Output>
       <Time>2012-04-27T22:04:43.0866431-05:00</Time>
-    </Item>
-    <Item>
-      <Source>Emeny1_SpriteSheet.png</Source>
-      <Name>Emeny1_SpriteSheet</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Emeny1_SpriteSheet.xnb</Output>
-      <Time>2012-04-27T22:04:43.3056501-05:00</Time>
     </Item>
     <Item>
       <Source>Help.png</Source>
@@ -188,7 +170,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Zelda1.xnb</Output>
-      <Time>2012-04-28T19:36:00.9088863-05:00</Time>
+      <Time>2012-04-29T13:14:18.936547-05:00</Time>
     </Item>
     <Item>
       <Source>audioHome.wav</Source>
@@ -288,6 +270,15 @@
       <Options>None</Options>
       <Output>C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\victory.xnb</Output>
       <Time>2012-04-27T22:04:49.9237747-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Enemy1_SpriteSheet.png</Source>
+      <Name>Enemy1_SpriteSheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Daniel\New Folder\Team18\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy1_SpriteSheet.xnb</Output>
+      <Time>2012-04-29T14:08:03.6820336-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
