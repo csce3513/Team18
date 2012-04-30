@@ -12,7 +12,7 @@ namespace WindowsGame1
     class EnemyCharacter : AnimatedSprite
     {
         const string CHARACTER_ASSETNAME = "Enemy1_SpriteSheet";
-        const int CHARACTER_SPEED = 100;
+        const int CHARACTER_SPEED = 80;
         const int MOVE_UP = -1;
         const int MOVE_DOWN = 1;
         const int MOVE_LEFT = -1;
@@ -90,7 +90,7 @@ namespace WindowsGame1
                 if (LastDecision.Y != 0)
                     StuckedDecision.Y = LastDecision.Y;
 
-                //Indicating stuck on object, state goes to stationary
+                //Indicating no movement, state goes to stationary
                 //Then, use last 2 dimentional move to get out from stuck
                 if (LastPosition2 == pos)
                 {
@@ -99,8 +99,8 @@ namespace WindowsGame1
                     mDirection = StuckedDecision;
                 }
 
-                //Indicating got out from stuck, change state to walking
-                if (LastPosition1 == pos && LastDecision != Vector2.Zero)
+                //Indicating Successful movement
+                if (LastPosition1 == pos)
                     mCurrentState = State.Walking;
                     
 
@@ -159,6 +159,7 @@ namespace WindowsGame1
 
                     if (pos.X > TargetPos.X +2)
                     {
+                        currentRow = 0;
                         mSpeed.X = CHARACTER_SPEED;
                         mDirection.X = MOVE_LEFT;
                     }
@@ -168,6 +169,7 @@ namespace WindowsGame1
                     }
                     else
                     {
+                        currentRow = 1;
                         mSpeed.X = CHARACTER_SPEED;
                         mDirection.X = MOVE_RIGHT;
                     }

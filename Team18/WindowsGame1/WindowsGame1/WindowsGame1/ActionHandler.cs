@@ -12,8 +12,17 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace WindowsGame1
 {
+    /// <summary>
+    /// ActionHandler Detects Collision and Check Visivility of Enemy.
+    /// This class use only values of sprites not reference,
+    /// so this needs to update each movement.
+    /// 
+    /// 
+    /// ::Future possible development::
+    /// Position List can be converted to sprite list which is referece type.
+    /// No need to update each movement,but need to change most of codes.
+    ///</summary>
 
-    //ActionHandler Detects Collision and Check Visivility of Enemy
 
     class ActionHandler
     {
@@ -32,7 +41,12 @@ namespace WindowsGame1
         
         //CharacterStatus indicate if player plays(1), moves to next level(2),
         //Or win the game(3), lose(4). First, set as playing.
-        private int CharacterStatus = 1;
+        public enum CharacterStatus
+        {
+            Play = 1, Next, Save, Lose, Win
+        }
+
+        public CharacterStatus PlayerState = CharacterStatus.Play;
         
         //Sprite Size
         int size = 0;
@@ -47,12 +61,6 @@ namespace WindowsGame1
         {
 
         }
-
-        public int CharaceterState
-        {
-            get { return CharacterStatus; }
-            set { CharacterStatus = value; }
-        }
  
         //Adding Object
         public void addObject(Vector2 Pos, int ID, float Width, float Height)
@@ -66,22 +74,22 @@ namespace WindowsGame1
         }
 
         //Ignore the item from Collision Detection
-        public void IgnoreObject(int ID)
+        public void IgnoreObject(Sprite name)
         {
-            InGame[FindSprite(ID)] = false;
+            InGame[FindSprite(name.SpriteID)] = false;
         }
 
         //Put object into Collision Detection
-        public void RecognizeObject(int ID)
+        public void RecognizeObject(Sprite name)
         {
-            InGame[FindSprite(ID)] = true;
+            InGame[FindSprite(name.SpriteID)] = true;
         }
 
 
         //Position Update
-        public void UpdatePos(int ID, Vector2 pos)
+        public void UpdatePos(Sprite name)
         {
-            posList[FindSprite(ID)] = pos;
+            posList[FindSprite(name.SpriteID)] = name.pos;
         }
 
         //May not need
@@ -111,15 +119,18 @@ namespace WindowsGame1
 
             int SubjectNum = FindSprite(ID);
 
+            //Loop until check all objects in the Map
             for (int i = 0; i < size; i++)
                 if (i != SubjectNum && InGame[i] && 202 != ID)
                 {
+                    //Return if the Vector filled with value before start Checking
                     if (status.X != 0 && status.Y != 0)
                         return status;
 
                     Boundary = false;
                     Detection = CollisionDetect(SubjectNum, i);
 
+                    //Collision Detected
                     if (Detection != new Vector2(0, 0))
                     {
                         //No boundaryCollision included
@@ -127,24 +138,28 @@ namespace WindowsGame1
                         {
                             //Collide with emeny means LOSE
                             //ID indicate Enemy, Subject has to be Character
-                            if (200 <= IDList[i] && IDList[i] < 300 && SubjectNum == 0)
-                                CharacterStatus = 4;
+                            if (200 <= IDList[i] && IDList[i] < 300 && (ID == 0 || ID == 1))
+                                PlayerState = CharacterStatus.Lose;
 
                             //Collide with Zelda means WIN
                             //ID1 is Princess
-                            else if (1 == IDList[i] && SubjectNum == 0)
-                                CharacterStatus = 3;
+                            else if (1 == IDList[i] && ID == 0)
+                                PlayerState = CharacterStatus.Save;
 
                             //Collide with Exit to Next means go to next level
-                            else if (501 == IDList[i] && SubjectNum == 0)
-                                CharacterStatus = 2;
+                            else if (501 == IDList[i] && ID == 0 )
+                                PlayerState = CharacterStatus.Next;
                         }
 
-                        //Normaly only one vector returned, so put each on status
-                        if (Detection.X != 0)
-                            status.X = Detection.X;
-                        if (Detection.Y != 0)
-                            status.Y = Detection.Y;
+                        //Enemies can ignore boundary
+                        if (!(Boundary && 200 <= ID && ID < 300))
+                        {
+                            //Normaly only one vector returned, so put each on status
+                            if (Detection.X != 0)
+                                status.X = Detection.X;
+                            if (Detection.Y != 0)
+                                status.Y = Detection.Y;
+                        }
                     }
                 }
             return status;
@@ -183,10 +198,10 @@ namespace WindowsGame1
             if (Position1.X < Position2.X)
                 if (Position1.X + Width1 > Position2.X)
                     //object1 above object2
-                    if (Position1.Y < Position2.Y)
+                    if (Position1.Y <= Position2.Y)
                     {
                         //Bottom of object1 under top of object2. (intercect)
-                        if (Position1.Y + Height1 > Position2.Y)
+                        if (Position1.Y + Height1 >= Position2.Y)
                         {
                             //Obtain difference between edges
                             diffX = (Position1.X + Width1) - Position2.X;
@@ -198,8 +213,8 @@ namespace WindowsGame1
                                 return new Vector2(diffX, 0);
                         }
                     }//object1 below object2
-                    else if (Position1.Y > Position2.Y)
-                        if (Position1.Y < Position2.Y + Height2) //(intercect)
+                    else if (Position1.Y >= Position2.Y)
+                        if (Position1.Y <= Position2.Y + Height2) //(intercect)
                         {
                             //Obtain difference between edges
                             diffX = (Position1.X + Width1) - Position2.X;
@@ -215,9 +230,9 @@ namespace WindowsGame1
             //Right side of Object2 on left side of Object1
             if (Position1.X > Position2.X)
                 if (Position1.X < Position2.X + Width2)
-                    if (Position1.Y < Position2.Y)
+                    if (Position1.Y <= Position2.Y)
                     {
-                        if (Position1.Y + Height1 > Position2.Y)
+                        if (Position1.Y + Height1 >= Position2.Y)
                         {
                             diffX = Position1.X-(Position2.X + Width2);
                             diffY = (Position1.Y + Height1) - Position2.Y;
@@ -228,8 +243,8 @@ namespace WindowsGame1
                                 return new Vector2(diffX, 0);
                         }
                     }
-                    else if (Position1.Y > Position2.Y)
-                        if (Position1.Y < Position2.Y + Height2)
+                    else if (Position1.Y >= Position2.Y)
+                        if (Position1.Y <= Position2.Y + Height2)
                         {
                             diffX =   Position1.X-(Position2.X + Width2);
                             diffY = Position1.Y - (Position2.Y + Height2);

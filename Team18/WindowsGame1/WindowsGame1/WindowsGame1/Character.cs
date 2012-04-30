@@ -14,7 +14,7 @@ namespace WindowsGame1
         const string CHARACTER_ASSETNAME = "Player";
         const int START_POSITION_X = 400;
         const int START_POSITION_Y = 250;
-        const int CHARACTER_SPEED = 160;
+        const int CHARACTER_SPEED = 150;
         const int MOVE_UP = -1;
         const int MOVE_DOWN = 1;
         const int MOVE_LEFT = -1;
@@ -76,7 +76,7 @@ namespace WindowsGame1
                 mSpeed = Vector2.Zero;
                 mDirection = Vector2.Zero;
 
-                currentRow = 1;
+                currentRow = 0;
 
                 if (aCurrentKeyboardState.IsKeyDown(Keys.Left) == true)
                 {
@@ -108,10 +108,25 @@ namespace WindowsGame1
 
             if (characterStatus == 4)
             {
+                currentRow = 4;
+                mSpeed = Vector2.Zero;
+                mDirection = Vector2.Zero;                
+            }
+
+            if (characterStatus == 5)
+            {
+                currentRow = 5;
+                mSpeed = Vector2.Zero;
+                mDirection = Vector2.Zero; 
+            }
+
+            if (characterStatus == 6)
+            {
+                currentRow = 0;
                 mSpeed = Vector2.Zero;
                 mDirection = Vector2.Zero;
-                currentRow = 4;
             }
+
         }
 
        

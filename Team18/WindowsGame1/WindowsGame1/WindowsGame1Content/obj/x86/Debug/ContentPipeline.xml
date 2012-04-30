@@ -125,7 +125,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Thanks.xnb</Output>
-      <Time>2012-04-27T14:29:24-05:00</Time>
+      <Time>2012-04-29T22:41:01.1846222-05:00</Time>
     </Item>
     <Item>
       <Source>finalflyingdragon.png</Source>
@@ -143,7 +143,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Player.xnb</Output>
-      <Time>2012-04-27T13:38:00-05:00</Time>
+      <Time>2012-04-29T20:35:27.2417417-05:00</Time>
     </Item>
     <Item>
       <Source>Enemy1_SpriteSheet.png</Source>
@@ -152,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Enemy1_SpriteSheet.xnb</Output>
-      <Time>2012-04-27T13:38:00-05:00</Time>
+      <Time>2012-04-29T20:35:27.0987336-05:00</Time>
     </Item>
     <Item>
       <Source>ArrowSheet.png</Source>
@@ -188,7 +188,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\audioHome.xnb</Output>
-      <Time>2012-04-27T14:29:26-05:00</Time>
+      <Time>2012-04-29T20:03:31.4521896-05:00</Time>
     </Item>
     <Item>
       <Source>collisionAudio.wav</Source>
@@ -260,7 +260,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\playAudio.xnb</Output>
-      <Time>2012-04-27T14:29:26-05:00</Time>
+      <Time>2012-04-29T20:07:02.5401613-05:00</Time>
     </Item>
     <Item>
       <Source>Scene2Audio.wav</Source>
@@ -269,7 +269,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Scene2Audio.xnb</Output>
-      <Time>2012-04-27T14:29:24-05:00</Time>
+      <Time>2012-04-29T20:05:46.3598286-05:00</Time>
     </Item>
     <Item>
       <Source>victory.wav</Source>
@@ -279,6 +279,69 @@
       <Options>None</Options>
       <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\victory.xnb</Output>
       <Time>2012-04-27T14:29:24-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Scene3Audio.wav</Source>
+      <Name>Scene3Audio</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Scene3Audio.xnb</Output>
+      <Time>2012-04-29T20:01:07.0690309-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Scene4Audio.wav</Source>
+      <Name>Scene4Audio</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Scene4Audio.xnb</Output>
+      <Time>2012-04-29T20:04:38.0329461-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Scene5Audio.wav</Source>
+      <Name>Scene5Audio</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Scene5Audio.xnb</Output>
+      <Time>2012-04-29T20:29:03.0840398-05:00</Time>
+    </Item>
+    <Item>
+      <Source>StoryAudio.wav</Source>
+      <Name>StoryAudio</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\StoryAudio.xnb</Output>
+      <Time>2012-04-29T20:02:07.853459-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Zelda1.png</Source>
+      <Name>Zelda1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Zelda1.xnb</Output>
+      <Time>2012-04-29T22:35:31.7780017-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Story1.png</Source>
+      <Name>Story1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Story1.xnb</Output>
+      <Time>2012-04-30T00:08:22.0862561-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Story2.png</Source>
+      <Name>Story2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Story2.xnb</Output>
+      <Time>2012-04-30T00:02:39.1729798-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

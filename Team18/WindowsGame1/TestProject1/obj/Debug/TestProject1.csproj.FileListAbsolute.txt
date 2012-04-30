@@ -243,3 +243,15 @@ C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\T
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\TestProject1\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\TestProject1\obj\Debug\TestProject1.dll
 C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\TestProject1\obj\Debug\TestProject1.pdb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\Blood_YOULOSE.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\Content\Blood_YOULOSE.xnb
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.exe
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\WindowsGame1Content.dll
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\WindowsGame1_Accessor.exe
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.pdb
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\Moq.pdb
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\Moq.xml
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\WindowsGame1_Accessor.pdb
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\obj\Debug\TestProject1.dll
+C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\obj\Debug\TestProject1.pdb

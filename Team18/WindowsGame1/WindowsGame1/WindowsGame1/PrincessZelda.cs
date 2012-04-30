@@ -11,15 +11,15 @@ namespace WindowsGame1
 {
     class PrincessZelda : AnimatedSprite
     {
-        const string CHARACTER_ASSETNAME = "Zelda";
+        const string CHARACTER_ASSETNAME = "Zelda1";
         const int START_POSITION_X = 700;
         const int START_POSITION_Y = 300;
-        const int CHARACTER_SPEED = 100;
+        const int CHARACTER_SPEED = 140;
         const int MOVE_UP = -1;
         const int MOVE_DOWN = 1;
         const int MOVE_LEFT = -1;
         const int MOVE_RIGHT = 1;
-        Vector2 TargetPos = new Vector2(-999, -999);
+        Vector2 TargetPos;
         Vector2 LastPosition1;
         Vector2 LastPosition2;
         Vector2 LastDecision = new Vector2(0, 0);
@@ -32,13 +32,26 @@ namespace WindowsGame1
             Walking, Chasing, Stationary
         }
 
-        enum GameState
+        //GameState indicate Zelda to wait the player or Chase the player
+        public enum GameState
         {
             Escape, Waiting
         }
 
+        //CharacterStatus indicate if player plays(1), moves to next level(2),
+        //Or win the game(3), lose(4). First, set as playing.
+        private int characterStatus = 1;
+
+        public int status
+        {
+            get { return characterStatus; }
+            set { characterStatus = value; }
+        }
+
         State mCurrentState = State.Walking;
-        GameState gState = GameState.Escape;
+
+        //Zrlda may wait for player or follow the player
+        public GameState gState = GameState.Escape;
 
         //Direction and Speed are used for character movement
         Vector2 mDirection = Vector2.Zero;
@@ -65,15 +78,16 @@ namespace WindowsGame1
         {
             UpdateMovement();
             LastDecision = mDirection;
-            LastPosition2 = pos;
+            LastPosition2 = pos; // Before Move
             base.Update(theGameTime, mSpeed, mDirection);
-            LastPosition1 = pos;
+            LastPosition1 = pos; // After Move
         }
 
         //UpdateMovement will detect inputs, then assign speed and direction
         //Enemy AI function included
         private void UpdateMovement()
         {
+            currentRow = 1;
 
             mSpeed = Vector2.Zero;
             mDirection = Vector2.Zero;
@@ -87,7 +101,8 @@ namespace WindowsGame1
                 if (LastDecision.Y != 0)
                     StuckedDecision.Y = LastDecision.Y;
 
-                //Indicating stuck on object, state goes to stationary
+                //Position did not change before movement that
+                //indicating stuck on object, state goes to stationary
                 //Then, use last 2 dimentional move to get out from stuck
                 if (LastPosition2 == pos)
                 {
@@ -96,41 +111,70 @@ namespace WindowsGame1
                     mDirection = StuckedDecision;
                 }
 
+                //Position is same as the after move. Successfuly moved.
                 //Indicating got out from stuck, change state to walking
-                if (LastPosition1 == pos && LastDecision != Vector2.Zero)
+                if (LastPosition1 == pos)
                     mCurrentState = State.Walking;
 
-                if (mCurrentState != State.Stationary)
+                //Close enought to player
+                if (pos.X <= TargetPos.X + 15 * 1.7f && pos.X >= TargetPos.X - 35 * 1.7f
+                        && pos.Y <= TargetPos.Y + 15 * 1.7f && pos.Y >= TargetPos.Y - 45 * 1.7f)
                 {
-                    if (pos.X > TargetPos.X + 2)
+                    currentRow = 1;
+                    mSpeed = Vector2.Zero;
+                    mDirection = Vector2.Zero;
+                }
+                else if (mCurrentState != State.Stationary)
+                {
+                    if (pos.X > TargetPos.X - 15)
                     {
+                        currentRow = 0;
                         mSpeed.X = CHARACTER_SPEED;
                         mDirection.X = MOVE_LEFT;
                     }
-                    else if (pos.X <= TargetPos.X + 2 && pos.X >= TargetPos.X - 2)
+                    else if (pos.X <= TargetPos.X -12 && pos.X >= TargetPos.X - 18)
                     {
                         //DO NOTHING
                     }
                     else
                     {
+                        currentRow = 4;
                         mSpeed.X = CHARACTER_SPEED;
                         mDirection.X = MOVE_RIGHT;
                     }
 
-                    if (pos.Y > TargetPos.Y + 2)
+                    if (pos.Y > TargetPos.Y - 15)
                     {
+                        currentRow = 2;
                         mSpeed.Y = CHARACTER_SPEED;
                         mDirection.Y = MOVE_UP;
                     }
-                    else if (pos.Y <= TargetPos.Y + 2 && pos.Y >= TargetPos.Y - 2)
+                    else if (pos.Y <= TargetPos.Y -12 && pos.Y >= TargetPos.Y - 18)
                     {
                         //DO NOTHING
-                    }
+                    }               
                     else
                     {
+                        currentRow = 1;
                         mSpeed.Y = CHARACTER_SPEED;
                         mDirection.Y = MOVE_DOWN;
-                    }
+                    }                   
+                }
+
+                if (characterStatus == 4)
+                {
+                    currentRow = 3;
+                    mSpeed = Vector2.Zero;
+                    mDirection = Vector2.Zero;
+                    mCurrentState = State.Walking;
+                }
+
+                if (characterStatus == 5)
+                {
+                    currentRow = 1;
+                    mSpeed = Vector2.Zero;
+                    mDirection = Vector2.Zero;
+                    mCurrentState = State.Walking;
                 }
 
 

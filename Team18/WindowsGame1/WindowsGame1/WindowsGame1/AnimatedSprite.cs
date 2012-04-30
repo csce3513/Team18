@@ -34,14 +34,12 @@ namespace WindowsGame1
         Vector2 mDirection = Vector2.Zero;
         Vector2 mSpeed = Vector2.Zero;
        // const string CHARACTER_ASSETNAME = "Player_SpriteSheet";
+       
        public AnimatedSprite()
-       {
-       
-       
-       
-       
+       {    
        
        }
+
        public void Animation(ContentManager content, string assetName, int spriteWidth, int spriteHeight, int numberOfFrames)
        
         {
@@ -109,8 +107,15 @@ namespace WindowsGame1
                 origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
 
             }
+            if (currentRow == 5)
+            {
+                sourceRect = new Rectangle(currentFrame * frameWidth, frameHeight * currentRow, frameWidth, frameHeight);
+                origin = new Vector2(sourceRect.Width / 2, sourceRect.Height / 2);
+
+            }
+
         //base.Update(gameTime);
-           base.Update(gameTime, mSpeed, mDirection);
+        //base.Update(gameTime, mSpeed, mDirection);
         }
 
         public void animateDraw(SpriteBatch theSpriteBatch)

@@ -14,7 +14,7 @@ namespace WindowsGame1
         const string CHARACTER_ASSETNAME = "finalflyingdragon";
         const int START_POSITION_X = 600;
         const int START_POSITION_Y = 250;
-        const int CHARACTER_SPEED = 100;
+        const int CHARACTER_SPEED = 120;
         const int MOVE_UP = -1;
         const int MOVE_DOWN = 1;
         const int MOVE_LEFT = -1;
@@ -147,13 +147,13 @@ namespace WindowsGame1
                 {
                     mCurrentState = State.Chasing;
 
-                    if (pos.X > TargetPos.X +2)
+                    if (pos.X > TargetPos.X - 40)
                     {
                         currentRow = 1;
                         mSpeed.X = CHARACTER_SPEED;
                         mDirection.X = MOVE_LEFT;
                     }
-                    else if (pos.X <= TargetPos.X +2 && pos.X >=TargetPos.X -2)
+                    else if (pos.X <= TargetPos.X - 37 && pos.X >= TargetPos.X - 43)
                     {
                         //DO NOTHING
                     }
@@ -164,13 +164,13 @@ namespace WindowsGame1
                         mDirection.X = MOVE_RIGHT;
                     }
 
-                    if (pos.Y > TargetPos.Y +2)
+                    if (pos.Y > TargetPos.Y - 40)
                     {
                         currentRow = 3;
                         mSpeed.Y = CHARACTER_SPEED;
                         mDirection.Y = MOVE_UP;
                     }
-                    else if (pos.Y <= TargetPos.Y + 2 && pos.Y >= TargetPos.Y - 2)
+                    else if (pos.Y <= TargetPos.Y - 37 && pos.Y >= TargetPos.Y - 43)
                     {
                         //DO NOTHING
                     }
