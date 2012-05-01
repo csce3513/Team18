@@ -35,20 +35,10 @@ c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\b
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\road01_a.xnb
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\road01_b.xnb
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\road02_a.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Terrain_Grass01_SR.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Terrain_Grass02_SR.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Forest 01a.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Grass _amp_ Pebbles _32x32_.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\menu.xnb
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\test.xnb
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\road01_a.xnb
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\road01_b.xnb
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\road02_a.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Terrain_Grass01_SR.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Terrain_Grass02_SR.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Forest 01a.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Grass _amp_ Pebbles _32x32_.xnb
-c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\menu.xnb
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\TestProject1.dll
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\TestProject1.pdb
 c:\users\mitsu\documents\visual studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\WindowsGame1.exe
@@ -255,3 +245,49 @@ C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\bin\Debug\Windo
 C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\obj\Debug\TestProject1.dll
 C:\Users\mxn011\Downloads\WindowsGame1\WindowsGame1\TestProject1\obj\Debug\TestProject1.pdb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\finalflyingdragon.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Player.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Enemy1_SpriteSheet.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\ArrowSheet.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Emeny1_SpriteSheet.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\audioHome.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\collisionAudio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\CollisionLeft.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\CollisionRight.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Condolescences.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\dragon.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\DyingAudio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Goal1.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\playAudio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Scene2Audio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\victory.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Scene3Audio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Scene4Audio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Scene5Audio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\StoryAudio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Zelda1.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Story1.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Story2.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\finalflyingdragon.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Player.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Enemy1_SpriteSheet.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\ArrowSheet.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Emeny1_SpriteSheet.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\audioHome.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\collisionAudio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\CollisionLeft.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\CollisionRight.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Condolescences.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\dragon.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\DyingAudio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Goal1.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\playAudio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Scene2Audio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\victory.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Scene3Audio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Scene4Audio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Scene5Audio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\StoryAudio.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Zelda1.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Story1.xnb
+C:\Users\Mitsu\Documents\Visual Studio 2010\Projects\WindowsGame1\TestProject1\bin\Debug\Content\Story2.xnb

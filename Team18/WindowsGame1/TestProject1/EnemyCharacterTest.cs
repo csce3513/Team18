@@ -115,19 +115,45 @@ namespace TestProject1
             Assert.Inconclusive("TODO: Implement code to verify target");
         }
 
-
-
         /// <summary>
         ///A test for UpdateMovement
+        ///This will test if the direction is correctly assigned compared to
+        ///Positions between Enemy and Player
         ///</summary>
         [TestMethod()]
         [DeploymentItem("WindowsGame1.exe")]
-        public void UpdateMovementTest()
+        public void UpdateMovementTest() 
         {
-            EnemyCharacter_Accessor target = new EnemyCharacter_Accessor(); // TODO: Initialize to an appropriate value
-            target.UpdateMovement();
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
-        }
+            EnemyCharacter_Accessor target = new EnemyCharacter_Accessor();
+            target.TargetPosition = (new Vector2(200, 300));//Player Position
+            Vector2 CurrentPos = new Vector2(100, 200); //Current Position
+            target.pos = (CurrentPos);//Set Current Position to Enemy Character
+            target.UpdateMovement();            
+            Assert.IsTrue(target.mDirection == new Vector2 (1, 1), "Direction(1,1) Fail");
 
+            CurrentPos = new Vector2(150, 400);
+            target.pos = (CurrentPos);
+            target.UpdateMovement();
+            Assert.IsTrue(target.mDirection == new Vector2 (1, -1), "Direction(1,-1) Fail");
+
+            CurrentPos = new Vector2(300, 250);
+            target.pos = (CurrentPos);
+            target.UpdateMovement();
+            Assert.IsTrue(target.mDirection == new Vector2 (-1, 1), "Direction(-1,1) Fail");
+        }       
+
+        /// <summary>
+        ///A test for FirstPos
+        ///</summary>
+        [TestMethod()]
+        public void FirstPosTest()
+        {
+            EnemyCharacter target = new EnemyCharacter(); 
+            Vector2 expected = new Vector2(300, 400);
+            Vector2 actual;
+            target.FirstPos = expected;
+            actual = target.FirstPos;
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

@@ -161,5 +161,108 @@ namespace TestProject1
             Assert.AreEqual(expected, actual);
             Assert.IsTrue(target.Scale == 2.0F);
         }
+
+        /// <summary>
+        ///A test for Sprite Constructor
+        ///</summary>
+        [TestMethod()]
+        public void SpriteConstructorTest()
+        {
+            int ID = 0; // TODO: Initialize to an appropriate value
+            Sprite target = new Sprite(ID);
+            Assert.Inconclusive("TODO: Implement code to verify target");
+        }
+
+        /// <summary>
+        ///A test for Sprite Constructor
+        ///</summary>
+        [TestMethod()]
+        public void SpriteConstructorTest2()
+        {
+            Sprite target = new Sprite();
+            Assert.Inconclusive("TODO: Implement code to verify target");
+        }
+
+        /// <summary>
+        ///A test for Draw
+        ///</summary>
+        [TestMethod()]
+        public void DrawTest()
+        {
+            Sprite target = new Sprite(); // TODO: Initialize to an appropriate value
+            SpriteBatch theSpriteBatch = null; // TODO: Initialize to an appropriate value
+            target.Draw(theSpriteBatch);
+            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+        }
+
+        /// <summary>
+        ///A test for LoadContent
+        ///</summary>
+        [TestMethod()]
+        public void LoadContentTest()
+        {
+            Sprite target = new Sprite(); // TODO: Initialize to an appropriate value
+            ContentManager theContentManager = null; // TODO: Initialize to an appropriate value
+            string theAssetName = string.Empty; // TODO: Initialize to an appropriate value
+            target.LoadContent(theContentManager, theAssetName);
+            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+        }
+
+        /// <summary>
+        ///A test for Update
+        ///</summary>
+        [TestMethod()]
+        public void UpdateTest()
+        {
+            Sprite target = new Sprite(); // TODO: Initialize to an appropriate value
+            GameTime gameTime = null; // TODO: Initialize to an appropriate value
+            target.Update(gameTime);
+            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+        }
+
+    
+        /// <summary>
+        ///A test for getPos
+        ///</summary>
+        [TestMethod()]
+        public void getPosTest()
+        {
+            Sprite target = new Sprite(); // TODO: Initialize to an appropriate value
+            Vector2 expected = new Vector2(); // TODO: Initialize to an appropriate value
+            Vector2 actual;
+            actual = target.getPos();
+            Assert.AreEqual(expected, actual);
+            Assert.Inconclusive("Verify the correctness of this test method.");
+        }
+
+        /// <summary>
+        ///A test for SpriteID
+        ///</summary>
+        [TestMethod()]
+        public void SpriteIDTest()
+        {
+            Sprite target = new Sprite(); // TODO: Initialize to an appropriate value
+            int expected = 0; // TODO: Initialize to an appropriate value
+            int actual;
+            target.SpriteID = expected;
+            actual = target.SpriteID;
+            Assert.AreEqual(expected, actual);
+            Assert.Inconclusive("Verify the correctness of this test method.");
+        }
+
+        /// <summary>
+        ///A test for pos
+        ///</summary>
+        [TestMethod()]
+        public void posTest()
+        {
+            Sprite target = new Sprite(); // TODO: Initialize to an appropriate value
+            Vector2 expected = new Vector2(); // TODO: Initialize to an appropriate value
+            Vector2 actual;
+            target.pos = expected;
+            actual = target.pos;
+            Assert.AreEqual(expected, actual);
+            Assert.Inconclusive("Verify the correctness of this test method.");
+        }
     }
 }

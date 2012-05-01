@@ -78,38 +78,7 @@ namespace TestProject1
         {
             Character target = new Character();
             Assert.IsNotNull(target, "character is not created"); //need a better test? 
-        }
-
-        /// <summary>
-        ///A test for LoadContent
-        ///</summary>
-        ///
-        //Loading Content. This has problem to find content without correct .dll
-        //Content folader may be needed to move under the Main project folder
-        //OR no need to create Game1.
-        [TestMethod()] 
-        [DeploymentItem(@"Content\test", "WindowsGame1.exe")]
-        public void LoadContentTest_Char() 
-        {
-            Game1 game = new Game1();
-            Character target = new Character(); 
-            ContentManager theContentManager = game.Content;
-            target.LoadContent(theContentManager);
-            Assert.IsNotNull(target.getPos());
-        }
-
-        /// <summary>
-        ///A test for Update
-        ///</summary>
-        [TestMethod()]
-        public void UpdateTest_char()
-        {
-            Character target = new Character(); 
-            GameTime theGameTime = new GameTime(); 
-            target.Update(theGameTime);
-            Assert.IsNotNull(target.getPos());
-        }
-
+        }     
 
         /// <summary>
         ///A test for UpdateMovement of right key
@@ -121,7 +90,7 @@ namespace TestProject1
             Character_Accessor target = new Character_Accessor();
             KeyboardState aCurrentKeyboardState = new KeyboardState(Keys.Right);
             target.UpdateMovement(aCurrentKeyboardState);
-            Assert.IsTrue(target.mSpeed.X.Equals(160) && target.mDirection.X.Equals(1));//Check if direction and speed are correct
+            Assert.IsTrue(target.mSpeed.X.Equals(150) && target.mDirection.X.Equals(1));//Check if direction and speed are correct
         }
 
         //Test left
@@ -132,7 +101,7 @@ namespace TestProject1
             Character_Accessor target = new Character_Accessor();
             KeyboardState aCurrentKeyboardState = new KeyboardState(Keys.Left);
             target.UpdateMovement(aCurrentKeyboardState);
-            Assert.IsTrue(target.mSpeed.X.Equals(160) && target.mDirection.X.Equals(-1));//Check if direction and speed are correct
+            Assert.IsTrue(target.mSpeed.X.Equals(150) && target.mDirection.X.Equals(-1));//Check if direction and speed are correct
         }
 
 
@@ -144,7 +113,7 @@ namespace TestProject1
             Character_Accessor target = new Character_Accessor();
             KeyboardState aCurrentKeyboardState = new KeyboardState(Keys.Up);
             target.UpdateMovement(aCurrentKeyboardState);
-            Assert.IsTrue(target.mSpeed.Y.Equals(160) && target.mDirection.Y.Equals(-1));//Check if direction and speed are correct
+            Assert.IsTrue(target.mSpeed.Y.Equals(150) && target.mDirection.Y.Equals(-1));//Check if direction and speed are correct
         }
 
         //Test down
@@ -155,7 +124,33 @@ namespace TestProject1
             Character_Accessor target = new Character_Accessor();
             KeyboardState aCurrentKeyboardState = new KeyboardState(Keys.Down);
             target.UpdateMovement(aCurrentKeyboardState);
-            Assert.IsTrue(target.mSpeed.Y.Equals(160) && target.mDirection.Y.Equals(1));//Check if direction and speed are correct
+            Assert.IsTrue(target.mSpeed.Y.Equals(150) && target.mDirection.Y.Equals(1));//Check if direction and speed are correct
+        }
+   
+        /// <summary>
+        ///A test for CharacterUpdate
+        ///</summary>
+        [TestMethod()]
+        public void CharacterUpdateTest()
+        {
+            Character target = new Character(); // TODO: Initialize to an appropriate value
+            GameTime theGameTime = null; // TODO: Initialize to an appropriate value
+            target.CharacterUpdate(theGameTime);
+            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+        }      
+
+        /// <summary>
+        ///A test for status
+        ///</summary>
+        [TestMethod()]
+        public void statusTest()
+        {
+            Character target = new Character(); 
+            int expected = 1; 
+            int actual;
+            target.status = expected;
+            actual = target.status;
+            Assert.AreEqual(expected, actual);            
         }
     }
 }
